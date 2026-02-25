@@ -1,0 +1,12 @@
++ = public
+- = private
+# = protect
+
+classe para POO deve ser private
+
+Classe = molde
+Entidade = o que?
+Propiedade = características
+Método = Comportamento
+
+instancia 
