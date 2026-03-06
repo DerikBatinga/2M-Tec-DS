@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4a2ab84-2c32-4888-835b-3faec9bdee47" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PW II (Programação Web 2)/Aula2/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/PW II (Programação Web 2)/Aula2/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,8 +61,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PS-253.31033.138" />
-        <option value="bundled-php-predefined-a98d8de5180a-0e0d91225499-com.jetbrains.php.sharedIndexes-PS-253.31033.138" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.31033.133" />
       </set>
     </attachedChunks>
   </component>
@@ -76,6 +75,7 @@
       <workItem from="1772754467397" duration="71000" />
       <workItem from="1772754638710" duration="959000" />
       <workItem from="1772755606317" duration="172000" />
+      <workItem from="1772760651804" duration="8000" />
     </task>
     <servers />
   </component>
