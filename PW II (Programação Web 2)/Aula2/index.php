@@ -65,7 +65,7 @@
     echo "<p> Nasci em $data_nascimento</p>";
     ?>
     <br></br>
-    <img src="img/github.webp" alt="MeuGit"><a href="https://github.com/DerikBatinga">Meu GitHub</a>
+    <img src="img/github.webp" alt="GitLogo"><a href="https://github.com/DerikBatinga">Meu GitHub</a>
 </div>
 </body>
 </html>
