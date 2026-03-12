@@ -4,21 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 2</title>
-
+    <!-- Fiz CSS inteiro porque não vejo motivos para fazer uma página fora -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
         body{
             position: relative;
-            
+            /*
+             Background
+             linear-gradient para deixar transparente;
+             url é necessário para direcionar backgrounds;
+             background-size para definir o tamanho
+            */
             background: 
             linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
             url(img/alonso.gif) no-repeat;
             background-size: 150rem;
-
-            height: 100vh;           /* altura da tela */
-            display: flex;           /* ativa flexbox */
-            justify-content: center; /* centraliza horizontal */
-            align-items: center;     /* centraliza vertical */
+            /*
+             Background
+             height para "liberar" a tela cheia;
+             display para deixar os itens na mesma linha;
+             O resto é centralização.
+            */
+            height: 100vh;           
+            display: flex;           
+            justify-content: center; 
+            align-items: center;     
     
         }
         .texto{
@@ -52,7 +62,7 @@
     
     echo"<p>Meu nome é:$nome $sobrenome</p>";
     echo"<p>Tenho $idade anos</p>";
-    echo "<p> Nasci em $data_nascimento";
+    echo "<p> Nasci em $data_nascimento</p>";
     ?>
     <br></br>
     <img src="img/github.webp" alt="MeuGit"><a href="https://github.com/DerikBatinga">Meu GitHub</a>
