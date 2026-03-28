@@ -1,0 +1,110 @@
+/* Geral */
+*{
+  margin: 0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+/* Rootzin */
+:root{
+  --preto: rgb(6, 6, 6);
+  --cinza:#5a5757;
+  --branco: rgb(252, 251, 251);
+  --principal: #db3434;
+  --secundaria: rgb(0, 149, 255);
+  /* --texto: 'Open-sans', sans-serif;
+  --subtitulo:'Poppins', sans-serif;
+  --titulo: 'Montserrat', sans-serif; */
+}
+
+/*Coisas gerais*/
+body{
+   background-color: #eeeaea;
+}
+
+header{
+   display: flex;
+   align-items: center;
+   background-color: var(--branco);
+   height: 100px;
+}
+
+.logo_nav{
+   height: 100px;
+   width: auto;
+}
+.lista_nav{
+   display: flex;
+   list-style: none;
+}
+.lista_nav li{
+   display: flex;
+   align-items: center; 
+   gap: 30px; 
+}
+.lista_nav i{
+   color: var(--principal);
+    font-size: 1.3rem;
+}
+.lista_nav a:not(.btn_nav){
+   display: inline-block;
+   padding: 10px;
+   text-decoration: none;
+   font-size: 1.2rem;
+   color: var(--cinza);
+   transition: 0.5s ease;
+}
+.lista_nav a:hover:not(.btn_nav){
+   border-radius: 10%;
+   background-color: rgb(255, 240, 240);
+   color: var(--principal);
+   transform: scale(1.1);
+}
+.btn_nav{
+  margin-left: auto;
+  background-color: var(--principal);
+  color: var(--branco);
+  cursor: pointer;
+}
+.btn_nav{
+  margin-left: auto;
+  padding: 10px 20px;
+  background-color: var(--principal);
+  border-radius: 5%;
+  color: var(--branco);
+  text-decoration: none;
+  cursor: pointer;
+  transition: 1s ease;
+}
+.btn_nav:hover{
+  margin-left: auto;
+  padding: 10px 20px;
+  border-radius: 5%;
+  color: var(--preto);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.hero{
+
+}
+.hero img{
+   
+   position: relative;
+   width: 100%;
+   opacity: 0.6;
+   z-index:-1;
+}
+.hero h1{
+position: relative;
+}
+.hero p{
+position: relative;
+}
+.hero button{
+position: relative;
+}
+
+.card{
+   background-color: #989696;
+   padding: 40px 30px;
+}
