@@ -91,20 +91,41 @@ header{
    
    position: relative;
    width: 100%;
+   height: 60vh;
    opacity: 0.6;
    z-index:-1;
 }
 .hero h1{
-position: relative;
+
 }
 .hero p{
-position: relative;
+
 }
 .hero button{
-position: relative;
+
 }
 
+.alinhamento_cards{
+   display: flex;
+   justify-content: space-around;
+}
 .card{
    background-color: #989696;
-   padding: 40px 30px;
+   padding: 40px 20px;
+   margin: 2px;
+   width: 100vh;
+}
+.card_feteps{
+   background-repeat: no-repeat; 
+   background-image: url(img/Feteps.webp);
+   background-size: 100%;
+}
+.card_email{
+   background-image: url(img/Email.webp);
+}
+.card_havard{
+   background-image: url(img/Havard.webp);
+}
+.card_usp{
+   background-image: url(img/Aprovada_usp.webp);
 }
