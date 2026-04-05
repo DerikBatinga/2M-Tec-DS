@@ -20,13 +20,13 @@
                         <a href="Cursos/cursos.php"> <i class="ri-graduation-cap-fill"></i>Cursos</a>
                     </li>
                     <li>               
-                        <a href="Gestao/gestao.php"> <i class="ri-team-fill"></i>Gestão</a>
+                        <a href="Gestão/gestao.php"> <i class="ri-team-fill"></i>Gestão</a>
                     </li>
                     <li>
                         <a href="Contato/contato.php"> <i class="ri-phone-fill"></i>    Contato</a>
                     </li>
                     <li>
-                        <a class="btn" href="contato.php">Prestar prova</a>
+                        <a class="btn" href="Contato/contato.php">Prestar prova</a>
                     </li>
                 </ul>
             </div>
@@ -40,19 +40,19 @@
     </section>
 
     <section>
-        <div class="container">
-            <img src="img/Historia.webp" alt="">
-            <div class="container_titulotexto">
+            <div class="container">
+                <img src="img/Historia.webp" alt="">
+                <div class="container_titulotexto">
 
-                <h2>Historia da ZL</h2>
-                <p>
-                    A história da Etec Zona Leste se confunde com o desenvolvimento educacional da região leste de São Paulo. Fundada com o objetivo de suprir a carência de mão de obra especializada em setores tecnológicos e administrativos, a unidade nasceu do compromisso do Governo do Estado com a democratização do ensino técnico de qualidade.
-                </p>
-                <p>
-                    Desde a sua inauguração, a escola passou por diversas expansões, modernizando seus currículos para acompanhar a evolução digital. O que começou com algumas salas de aula transformou-se em um complexo educacional robusto, que hoje atende milhares de alunos em três períodos. Ao longo das décadas, orgulhamo-nos de ter formado profissionais que hoje lideram empresas, criam suas próprias startups e contribuem ativamente para o crescimento econômico e social da nossa comunidade. Nossa trajetória é marcada pela superação e pela certeza de que a educação é a ferramenta mais poderosa de transformação social.
-                </p>
+                    <h2>Historia da ZL</h2>
+                    <p>
+                        A história da Etec Zona Leste se confunde com o desenvolvimento educacional da região leste de São Paulo. Fundada com o objetivo de suprir a carência de mão de obra especializada em setores tecnológicos e administrativos, a unidade nasceu do compromisso do Governo do Estado com a democratização do ensino técnico de qualidade.
+                    </p>
+                    <p>
+                        Desde a sua inauguração, a escola passou por diversas expansões, modernizando seus currículos para acompanhar a evolução digital. O que começou com algumas salas de aula transformou-se em um complexo educacional robusto, que hoje atende milhares de alunos em três períodos. Ao longo das décadas, orgulhamo-nos de ter formado profissionais que hoje lideram empresas, criam suas próprias startups e contribuem ativamente para o crescimento econômico e social da nossa comunidade. Nossa trajetória é marcada pela superação e pela certeza de que a educação é a ferramenta mais poderosa de transformação social.
+                    </p>
+                </div>
             </div>
-        </div>
     </section>
     
     <section> 
@@ -67,10 +67,10 @@
                     </p>
                 </div>
             <img src="img/Estudantes.webp" alt="">
-        </div>
+        </div>  
     </section>
     
-    <section>
+    <section class="destaques">
         <h2>Destaques e Premiações</h2>
         <div class="alinhamento_cards">
             <div class="card card_feteps">
@@ -154,14 +154,14 @@
                         <a href="Cursos/cursos.php"> <i class="ri-graduation-cap-fill"></i>Cursos</a>
                     </li>
                     <li>               
-                        <a href="Gestao/gestao.php"> <i class="ri-team-fill"></i>Gestão</a>
+                        <a href="Gestão/gestao.php"> <i class="ri-team-fill"></i>Gestão</a>
                     </li>
                     <li>
                         <a href="Contato/contato.php"> <i class="ri-phone-fill"></i>    Contato</a>
                     </li>
     </div>
         <div class="footer_col">
-            <p>Receba novidades</p>
+            <h2>Receba novidades</h2>
             <label for="email_footer">Email</label>
             <input type="email" name="email" id="email_footer" placeholder="Seu e-mail aqui">
             <button type="submit"><i class="ri-mail-line"></i></button>
@@ -174,3 +174,5 @@
         
 </body>
 </html>
+
+

@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* Geral */
+*{
+  margin: 0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+/* Rootzin */
+:root{
+  --preto: rgb(6, 6, 6);
+  --cinza:#5a5757;
+  --branco: rgba(252, 251, 251,0.9);
+  --principal: #db3434;
+  --secundaria: rgba(255, 240, 240,0.6);
+  --texto: "Open Sans", sans-serif;
+  --subtitulo:"Lato", sans-serif;
+  --titulo: "Poppins", sans-serif;
+}
+
+/*Coisas gerais*/
+body{background: var(--secundaria);}
+
+h1{
+   font-family: var(--titulo);
+   font-weight: 700;
+   font-size:80px;
+}
+h2,h3{
+   font-family: var(--subtitulo);
+   font-weight: 800;
+   font-size:30px;
+}
+p{
+   font-family: var(--texto);
+   font-weight: 400;
+   font-size:20px;
+}
+
+header{
+   display: flex;
+   position: sticky;
+   top: 0;
+   z-index: 2;
+   align-items: center;
+   background-color: var(--branco);
+   backdrop-filter: blur(15px);
+   height: 100px;
+}
+/*  */
+form{
+   background-color: var(--secundaria);
+   background-size: 200px;
+   width: 50%;
+}
+
+.logo_nav{
+   height: 100px;
+   width: auto;
+}
+.lista_nav{
+   display: flex;
+   list-style: none;
+   width: 100%;
+}
+.lista_nav li{
+   display: flex;
+   align-items: center; 
+   margin-left: 30px;
+}
+.lista_nav i{color: var(--principal); font-size: 1.3rem; }
+
+.lista_nav a:not(.btn){
+   display: inline-block;
+   padding: 10px;
+   text-decoration: none;
+   font-size: 1.2rem;
+   color: var(--cinza);
+   transition: 0.5s ease;
+}
+.lista_nav a:hover:not(.btn){
+   border-radius: 10%;
+   background-color: var(--secundaria);
+   color: var(--principal);
+   transform: scale(1.1);
+}
+.lista_nav .btn{
+   
+}
+.btn{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--principal);
+  border-radius: 5%;
+  color: var(--branco);
+  text-decoration: none;
+  cursor: pointer;
+  transition: 1s ease;
+}
+.btn:hover{
+  padding: 10px 20px;
+  border-radius: 5%;
+  color: var(--preto);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.container_diretora, .titulo_section{ display: flex; justify-content: center;} 
+.container_coordenadores{ display: flex; }   
+
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color:var(--branco);
+   backdrop-filter: blur(20px);
+   border: 1px var(--principal) solid ;
+   border-radius: 5px;
+   width: 50%;
+   box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
+   padding:20px ;
+   margin: 20px;
+} 
+
+.container img{
+   width: 25%;
+   border-radius: 10px;
+   border: 1px var(--cinza) solid;
+}
+.container_titulotexto{
+   flex-direction: column;
+   margin: 10px;
+}
+.container_titulotexto h2{
+   font-size: 40px;
+   font-style: italic;
+   margin-bottom: 20px;
+}
+
+.cards_professores{
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+.opcoes_professores{
+   text-align: center;
+   font-style: italic;
+}
+.bases_professores{
+   display: flex;
+   width: 100%;
+   height: 7vh;
+   justify-content: space-around;
+   align-items: center;
+   background-color: var(--principal);
+   color: var(--branco);
+}
+/* Estilos para os botões das abas */
+.botao_aba{
+   font-size: 28px;
+   font-family: var(--texto);
+   font-weight: 200;
+   font-style: italic;
+   background: none;
+   border: none;
+   color: var(--branco);
+   cursor: pointer;
+   padding: 10px 20px;
+   transition: 0.3s ease;
+}
+/* Estilo quando a aba está ativa (selecionada) */
+.botao_aba.ativo{
+   background-color: var(--secundaria);
+   color: var(--principal);
+   border-radius: 5px;
+}
+/* Estado hover do botão */
+.botao_aba:hover{
+   background-color: var(--branco);
+   color: var(--preto);
+   border-radius: 5px;
+}
+/* Classe para ocultar elementos */
+.oculto{
+   display: none;
+}
+
+.card{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color:var(--branco);
+   backdrop-filter: blur(20px);
+   border: 1px var(--principal) solid ;
+   border-radius: 5px;
+   width: 30%;
+   box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
+   padding:20px ;
+   margin: 20px;
+}
+.card img{
+   border: 1px var(--cinza) solid;
+   border-radius: 4px;
+   width: 35%;
+   height: 20vh;
+} 
+
+.footer{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   background-color: var(--preto);
+   color: var(--branco);
+   font-size: 20px;
+}
+.footer_col{
+   align-content: center;
+   flex-direction: column;
+}
+.footer img{
+   width: 200px;
+}
+.footer li{
+list-style: none;
+}
+.footer a{
+    text-decoration: none;
+    color: var(--principal);
+}
+.footer i{
+color: var(--branco);
+}
+.footer input{
+ width: 200px;
+   height: 5vh;
+}
+.footer button {
+   background-color: var(--principal);
+   margin-left: 4px ;
+   width: 100px;
+   height: 5vh;
+   transition: 1s ease;
+}
+.footer button:hover {
+   transform: scale(1.11);
+}
+.footer_direitos{
+   background-color: #1b1a1a;
+   text-align: center;
+   width: 100%;
+}

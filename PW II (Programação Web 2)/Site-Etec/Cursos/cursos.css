@@ -1,0 +1,317 @@
+/* ==========================================
+   IMPORTAÇÃO DE FONTES DO GOOGLE FONTS
+   ========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* ==========================================
+   ESTILOS GERAIS / RESET
+   ========================================== */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* ==========================================
+   VARIÁVEIS CSS (ROOT)
+   Define as cores e fontes do projeto
+   ========================================== */
+:root {
+    --preto: rgb(6, 6, 6);              /* Cor preta principal */
+    --cinza: #5a5757;                    /* Cor cinza para textos secundários */
+    --branco: rgba(252, 251, 251, 0.9); /* Cor branca com transparência */
+    --principal: #db3434;                /* Cor vermelha principal (acentos) */
+    --secundaria: rgba(255, 240, 240, 0.6); /* Cor rosa claro de fundo */
+    --texto: "Open Sans", sans-serif;    /* Fonte para parágrafos */
+    --subtitulo: "Lato", sans-serif;     /* Fonte para subtítulos */
+    --titulo: "Poppins", sans-serif;     /* Fonte para títulos */
+}
+
+/* ==========================================
+   ESTILOS DO CORPO / BODY
+   ========================================== */
+body {
+    background: var(--secundaria);  /* Fundo rosa claro */
+}
+
+/* ==========================================
+   ESTILOS DE TIPOGRAFIA
+   ========================================== */
+h1 {
+    font-family: var(--titulo);
+    font-weight: 700;
+    font-size: 80px;
+}
+
+h2, h3 {
+    font-family: var(--subtitulo);
+    font-weight: 800;
+    font-size: 30px;
+}
+
+p {
+    font-family: var(--texto);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* ==========================================
+   CABEÇALHO / HEADER
+   Barra de navegação fixa no topo
+   ========================================== */
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    align-items: center;
+    background-color: var(--branco);
+    backdrop-filter: blur(15px);
+    height: 100px;
+}
+
+/* ==========================================
+   LOGO DA NAVEGAÇÃO
+   ========================================== */
+.logo_nav {
+    height: 100px;
+    width: auto;
+}
+
+/* ==========================================
+   LISTA DE NAVEGAÇÃO
+   ========================================== */
+.lista_nav {
+    display: flex;
+    list-style: none;
+    width: 100%;
+}
+
+.lista_nav li {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.lista_nav i {
+    color: var(--principal);
+    font-size: 1.3rem;
+}
+
+/* ==========================================
+   LINKS DA NAVEGAÇÃO
+   ========================================== */
+.lista_nav a:not(.btn) {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--cinza);
+    transition: 0.5s ease;
+}
+
+.lista_nav a:hover:not(.btn) {
+    border-radius: 10%;
+    background-color: var(--secundaria);
+    color: var(--principal);
+    transform: scale(1.1);
+}
+
+/* ==========================================
+   BOTÃO / BUTTON
+   ========================================== */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--principal);
+    border-radius: 5%;
+    color: var(--branco);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.btn:hover {
+    padding: 10px 20px;
+    border-radius: 5%;
+    color: var(--preto);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* ==========================================
+   SEÇÃO DE CURSOS
+   ========================================== */
+.cursos_secao {
+    padding: 40px 20px;  /* Espaçamento interno da seção */
+}
+
+/* Título principal da seção de cursos */
+.cursos_titulo {
+    text-align: center;       /* Centraliza o título */
+    color: var(--preto);       /* Cor do título */
+    margin-bottom: 40px;       /* Espaçamento abaixo do título */
+}
+
+/* ==========================================
+   CONTAINER DE CARDS
+   Organiza os cards em grid responsivo
+   ========================================== */
+.cursos_container {
+    display: grid;                            /* Layout em grid */
+    grid-template-columns: repeat(3, 1fr);    /* 3 colunas de tamanho igual */
+    gap: 30px;                                 /* Espaçamento entre cards */
+    max-width: 1400px;                         /* Largura máxima do container */
+    margin: 0 auto;                            /* Centraliza o container */
+}
+
+/* ==========================================
+   CARD DE CURSO
+   ========================================== */
+.card {
+    display: flex;
+    flex-direction: column;      /* Organiza conteúdo em coluna */
+    justify-content: center;     /* Centraliza verticalmente */
+    align-items: center;         /* Centraliza horizontalmente */
+    background-color: var(--branco);
+    backdrop-filter: blur(20px);
+    border: 1px var(--principal) solid;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;  /* Animação suave ao passar o mouse */
+}
+
+/* Efeito hover no card */
+.card:hover {
+    transform: scale(1.03);      /* Leve aumento ao passar o mouse */
+}
+
+/* Imagem do card (foto do professor) */
+.card img {
+    border: 1px var(--cinza) solid;
+    border-radius: 4px;
+    width: 35%;
+    height: 20vh;
+    object-fit: cover;           /* Mantém proporções da imagem */
+}
+
+/* ==========================================
+   RODAPÉ / FOOTER
+   ========================================== */
+.footer {
+    display: flex;
+    flex-wrap: wrap;                 /* Permite quebra de linha */
+    justify-content: space-around;   /* Espaçamento uniforme entre colunas */
+    background-color: var(--preto);
+    color: var(--branco);
+    font-size: 20px;
+}
+
+/* Coluna do rodapé */
+.footer_col {
+    align-content: center;
+    flex-direction: column;
+}
+
+/* Imagem dentro do rodapé */
+.footer img {
+    width: 200px;
+}
+
+/* Lista do rodapé */
+.footer li {
+    list-style: none;
+}
+
+/* Links do rodapé */
+.footer a {
+    text-decoration: none;
+    color: var(--principal);
+}
+
+/* Ícones do rodapé */
+.footer i {
+    color: var(--branco);
+}
+
+/* Campo de input do rodapé */
+.footer input {
+    width: 200px;
+    height: 5vh;
+}
+
+/* Botão do rodapé */
+.footer button {
+    background-color: var(--principal);
+    margin-left: 4px;
+    width: 100px;
+    height: 5vh;
+    transition: 1s ease;
+}
+
+.footer button:hover {
+    transform: scale(1.11);
+}
+
+/* Barra de direitos autorais */
+.footer_direitos {
+    background-color: #1b1a1a;
+    text-align: center;
+    width: 100%;
+}
+
+/* ==========================================
+   RESPONSIVIDADE
+   Adapta o layout para telas menores
+   ========================================== */
+
+/* Telas de tamanho médio (tablets) */
+@media (max-width: 1024px) {
+    .cursos_container {
+        grid-template-columns: repeat(2, 1fr);  /* 2 colunas */
+    }
+
+    h1 {
+        font-size: 60px;  /* Reduz tamanho do título */
+    }
+}
+
+/* Telas pequenas (celulares) */
+@media (max-width: 600px) {
+    .cursos_container {
+        grid-template-columns: 1fr;  /* 1 coluna */
+    }
+
+    h1 {
+        font-size: 40px;  /* Reduz tamanho do título */
+    }
+
+    .card {
+        margin: 10px 0;   /* Remove margem lateral */
+    }
+
+    .card img {
+        width: 50%;       /* Aumenta largura da imagem */
+        height: 15vh;     /* Reduz altura da imagem */
+    }
+
+    header {
+        flex-direction: column;   /* Navegação em coluna */
+        height: auto;            /* Altura automática */
+        padding: 10px 0;
+    }
+
+    .lista_nav {
+        flex-direction: column;   /* Links em coluna */
+        align-items: center;
+    }
+
+    .lista_nav li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}

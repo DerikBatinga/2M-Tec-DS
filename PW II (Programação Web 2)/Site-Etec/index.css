@@ -11,7 +11,7 @@
 :root{
   --preto: rgb(6, 6, 6);
   --cinza:#5a5757;
-  --branco: rgba(252, 251, 251,1);
+  --branco: rgba(252, 251, 251,0.9);
   --principal: #db3434;
   --secundaria: rgba(255, 240, 240,0.6);
   --texto: "Open Sans", sans-serif;
@@ -41,8 +41,12 @@ p{
 
 header{
    display: flex;
+   position: sticky;
+   top: 0;
+   z-index: 2;
    align-items: center;
    background-color: var(--branco);
+   backdrop-filter: blur(15px);
    height: 100px;
 }
 /*  */
@@ -80,7 +84,6 @@ header{
 }
 .lista_nav .btn{
    
-}
 .btn{
   display: inline-block;
   padding: 10px 20px;
@@ -116,7 +119,6 @@ header{
    align-items: center;
    background-color:var(--secundaria);
    backdrop-filter: blur(20px);
-
    border: 1px var(--cinza) solid ;
    border-radius: 5px;
    box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
@@ -141,6 +143,9 @@ margin: 10px;
 
 }
 /*  */
+.links_uteis h2, .destaques h2{
+   text-align: center;
+}
 .card{
    justify-content: space-around;
    padding: 35px 15px;
