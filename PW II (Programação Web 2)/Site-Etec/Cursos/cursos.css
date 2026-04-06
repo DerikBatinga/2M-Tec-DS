@@ -189,14 +189,36 @@ header {
 .card:hover {
     transform: scale(1.03);      /* Leve aumento ao passar o mouse */
 }
+.card:hover img{
+    border-radius: ;
+}
 
 /* Imagem do card (foto do professor) */
+/* CORREÇÃO: object-fit: cover mantém a proporção da imagem
+   sem achatar ou distorcer */
 .card img {
     border: 1px var(--cinza) solid;
-    border-radius: 4px;
-    width: 35%;
-    height: 20vh;
-    object-fit: cover;           /* Mantém proporções da imagem */
+    border-radius: 50%;           /* Forma circular para fotos de perfil */
+    width: 150px;                 /* Largura fixa */
+    height: 150px;                /* Altura fixa igual à largura (quadrado) */
+    object-fit: cover;            /* Mantém proporções, recorta o excesso */
+    object-position: center;       /* Centraliza a imagem no corte */
+}
+
+/* Nome do curso dentro do card */
+.card h2 {
+    margin-top: 15px;             /* Espaço acima do título */
+    margin-bottom: 10px;          /* Espaço abaixo do título */
+    text-align: center;           /* Centraliza o texto */
+    font-size: 22px;              /* Tamanho da fonte */
+    color: var(--preto);          /* Cor do texto */
+}
+
+/* Descrição do professor dentro do card */
+.card p {
+    text-align: center;           /* Centraliza o texto */
+    font-size: 16px;              /* Tamanho da fonte */
+    color: var(--cinza);          /* Cor do texto secundário */
 }
 
 /* ==========================================
@@ -295,8 +317,8 @@ header {
     }
 
     .card img {
-        width: 50%;       /* Aumenta largura da imagem */
-        height: 15vh;     /* Reduz altura da imagem */
+        width: 120px;       /* Reduz tamanho da imagem */
+        height: 120px;      /* Mantém quadrada */
     }
 
     header {

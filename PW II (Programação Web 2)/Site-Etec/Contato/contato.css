@@ -67,7 +67,7 @@ form{
 }
 .lista_nav li{
    display: flex;
-   align-items: center; 
+   align-items: center;
    margin-left: 30px;
 }
 .lista_nav i{
@@ -89,7 +89,7 @@ form{
    transform: scale(1.1);
 }
 .lista_nav .btn{
-   
+
 }
 .btn{
   display: inline-block;
@@ -121,7 +121,7 @@ form{
    height: 88vh;
 }
 .imagemlateral h2{
- text-align: center;  
+ text-align: center;
 }
 .form{
    display: flex;
@@ -141,10 +141,10 @@ form{
    margin: 0 auto;      /* centraliza na tela */
    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
-  .campo {                                                                                                                                     
+  .campo {
       display: flex;
       margin: 0 10px;
-      flex-direction: column;  /* label em cima, input embaixo */                                                                              
+      flex-direction: column;  /* label em cima, input embaixo */
       gap: 8px;               /* espaço entre label e input */
   }
   .campo label{
@@ -152,41 +152,41 @@ form{
    font-family: Arial, Helvetica, sans-serif;
    font-size: 15px;
   }
-  .campo input,                                                                                                                                
-  .campo select,                                                                                                                             
+  .campo input,
+  .campo select,
   .campo textarea {
       padding: 12px 15px;        /* espaço dentro do input */
-      border: 2px solid #ccc;    /* borda cinza */                                                                                             
-      border-radius: 8px;         /* bordas arredondadas */                                                                                    
-      font-size: 1rem;            /* texto legível */                                                                                          
-      background: #fafafa;         /* fundo levemente cinza */                                                                    
+      border: 2px solid #ccc;    /* borda cinza */
+      border-radius: 8px;         /* bordas arredondadas */
+      font-size: 1rem;            /* texto legível */
+      background: #fafafa;         /* fundo levemente cinza */
   }
     .campo input:focus,
-    .campo select:focus,                                                                                                                         
+    .campo select:focus,
     .campo textarea:focus {
-      outline: none;                        /* remove borda azul padrão */                                                                     
+      outline: none;                        /* remove borda azul padrão */
       border-color: var(--principal);       /* usa sua cor vermelha */
-      background: white;                    /* fundo fica branco */                                                                            
-  } 
+      background: white;                    /* fundo fica branco */
+  }
   .botao_enviar{
      padding: 5px 10px;
       background: var(--principal) !important;       /* usa o vermelho do tema */
-      color: white;                                                                                                                            
+      color: white;
       border: none;
       margin: 10px;
       border-radius: 8px;
-      appearance: none;                                                                                                                      
+      appearance: none;
       font-size: 1rem;
       font-weight: bold;
-      text-align: center;                                                                                                                       
+      text-align: center;
       cursor: pointer;                     /* muda o cursor para mão */
-      transition: all 0.3s ease;          /* transição suave */ 
-  }                                                                                                                                           
-      .botao_enviar:hover {                                                                                                                                                                                                            
+      transition: all 0.3s ease;          /* transição suave */
+  }
+      .botao_enviar:hover {
       background: #b82b2b;     /* vermelho mais escuro */
       transform: translateY(-2px);  /* sobe um pouquinho */
-  }                                                                                                                                                                                                                                
-   
+  }
+
 .footer{
    display: flex;
    flex-wrap: wrap;

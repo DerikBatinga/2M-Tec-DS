@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="header">
-      <img class="logo_nav" src="../img/EtecZL.png" alt="Logo EtecZL">  
+      <img class="logo_nav" src="../img/EtecZL.png" alt="Logo EtecZL">
         <nav>
             <div class="container_nav">
                 <ul class="lista_nav">
@@ -41,32 +41,32 @@
                     <div class="form_titulo">
                         <h2>Contate</h2>
                         <p>Tire suas dúvidas</p>
-                    </div> 
+                    </div>
                         <div class="campo">
                             <label for="nome">Nome Completo:</label>
                         <input id="nome" name="nome" type="text" placeholder="Nome">
                     </div>
-                    
+
                     <div class="campo">
                         <label for="email">E-mail para Contato</label>
                         <input id="email" name="email" type="email" placeholder="Email">
                     </div>
-    
-                    <div class="campo">                
+
+                    <div class="campo">
                         <label for="pessoa">Quem está fazendo este formulário:</label>
                         <select id="pessoa" name="pessoa" >
                             <option value="Est">Estudante</option>
                             <option value="Resp">Responsável</option>
                         </select>
                     </div>
-                    
+
                     <div class="campo">
                         <label for="assunto">Assunto:</label>
                         <input id="assunto" name="assunto" type="text" placeholder="Informe do que se trata">
                     </div>
-                    
-                    <div class="campo">                
-                        <label for="mensagem">Mensagem:</label>    
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem:</label>
                         <textarea id="mensagem" name="mensagem" placeholder="Mensagem"></textarea>
                     </div>
                      <div class="botao_enviar">
@@ -92,7 +92,7 @@
                 <a href=""><i class="ri-facebook-box-fill"></i>Facebook</a>
             </li>
             <li>
-                <a href=""> <i class="ri-phone-fill"></i>Telefone</a>
+                <a href=""><i class="ri-phone-fill"></i>Telefone</a>
             </li>
             </ul>
         </div>
@@ -123,6 +123,6 @@
             </div>
         </div>
     </footer>
-        
+
 </body>
 </html>
