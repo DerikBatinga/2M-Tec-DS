@@ -3,41 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link para o CSS específico da página inicial -->
     <link rel="stylesheet" href="index.css">
-    <!-- Ícones da biblioteca Remix Icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>EtecZL-Início</title>
 </head>
 <body>
-    <!-- ==========================================
-         CABEÇALHO / HEADER
-         Barra de navegação fixa no topo
-         ========================================== -->
+    <!-- Cabeçalho com logo e navegação -->
     <header class="header">
-        <!-- Logo da Etec na navegação -->
         <img class="logo_nav" src="img/EtecZL.png" alt="Logo EtecZL">
         <nav>
             <div class="container_nav">
-                <!-- Lista de links de navegação -->
                 <ul class="lista_nav">
-                    <!-- Link para a página inicial (página atual) -->
                     <li>
                         <a href="#"> <i class="ri-home-2-fill"></i>Home</a>
                     </li>
-                    <!-- Link para a página de cursos -->
                     <li>
                         <a href="Cursos/cursos.php"> <i class="ri-graduation-cap-fill"></i>Cursos</a>
                     </li>
-                    <!-- Link para a página de gestão -->
                     <li>
                         <a href="Gestão/gestao.php"> <i class="ri-team-fill"></i>Gestão</a>
                     </li>
-                    <!-- Link para a página de contato -->
                     <li>
                         <a href="Contato/contato.php"> <i class="ri-phone-fill"></i>Contato</a>
                     </li>
-                    <!-- Botão de chamada para ação -->
                     <li>
                         <a class="btn" href="Contato/contato.php">Prestar prova</a>
                     </li>
@@ -46,23 +34,16 @@
         </nav>
     </header>
 
-    <!-- ==========================================
-         SEÇÃO HERO
-         Banner principal da página
-         ========================================== -->
+    <!-- Seção hero (banner principal) -->
     <section class="hero">
         <h1>Etec da Zona Leste</h1>
         <p>Venha estudar na melhor Etec da zona leste de São Paulo!</p>
         <a class="btn">Fazer vestibulinho</a>
     </section>
 
-    <!-- ==========================================
-         SEÇÃO: HISTÓRIA DA ETEC
-         Conta a história da Etec Zona Leste
-         ========================================== -->
+    <!-- Seção história da Etec -->
     <section>
         <div class="container">
-            <!-- Imagem relacionada à história -->
             <img src="img/Historia.webp" alt="História da Etec">
             <div class="container_titulotexto">
                 <h2>Historia da ZL</h2>
@@ -76,10 +57,7 @@
         </div>
     </section>
 
-    <!-- ==========================================
-         SEÇÃO: PORQUÊ ESCOLHER ESTA ETEC
-         Diferenciais da Etec Zona Leste
-         ========================================== -->
+    <!-- Seção "Porquê escolher esta Etec" -->
     <section>
         <div class="container">
             <div class="container_titulotexto">
@@ -95,33 +73,25 @@
         </div>
     </section>
 
-    <!-- ==========================================
-         SEÇÃO: DESTAQUES E PREMIAÇÕES
-         Mostra as principais notícias/premiações
-         ========================================== -->
+    <!-- Seção de destaques e premiações -->
     <section class="destaques">
         <h2>Destaques e Premiações</h2>
-        <!-- Container dos cards de destaque -->
         <div class="alinhamento_cards">
-            <!-- Card: 2º Lugar na Feteps -->
             <div class="card card_feteps">
                 <h3>2º Lugar na Feteps</h3>
                 <p>Projeto do AMS conquista 2º lugar na Feteps com projeto inovador!</p>
             </div>
 
-            <!-- Card: Novo Email Institucional -->
             <div class="card card_email">
                 <h3>Novo Email Institucional</h3>
                 <p>A Etec está com um novo email institucional, consulte o seu NSA para mais informações</p>
             </div>
 
-            <!-- Card: Aulão de Inglês de Harvard -->
             <div class="card card_havard">
                 <h3>Da Etec direto para Havard!</h3>
                 <p>3º Aulão de inglês de Havard já está disponível em seu EMAIL!</p>
             </div>
 
-            <!-- Card: Aluna aprovada na USP -->
             <div class="card card_usp">
                 <h3>Aluna aprovada na USP</h3>
                 <p>A estudante de administração Viviane Cardoso foi aceito em medicina na USP!</p>
@@ -129,36 +99,28 @@
         </div>
     </section>
 
-    <!-- ==========================================
-         SEÇÃO: LINKS ÚTEIS
-         Links para sistemas e recursos importantes
-         ========================================== -->
+    <!-- Seção de links úteis -->
     <section class="links_uteis">
         <h2>Links úteis</h2>
-        <!-- Container dos cards de links -->
         <div class="alinhamento_cards">
-            <!-- Card: NSA (Sistema Estudantil) -->
             <div class="card">
                 <i class="ri-database-2-fill"></i>
                 <h3>NSA</h3>
                 <p>Sistema estudantil</p>
             </div>
 
-            <!-- Card: Email Institucional -->
             <div class="card">
                 <i class="ri-mail-line"></i>
                 <h3>Email institucional</h3>
                 <p>Acesse agora por meio do Outlook</p>
             </div>
 
-            <!-- Card: Vestibulinho -->
             <div class="card">
                 <i class="ri-team-fill"></i>
                 <h3>Vestibulinho</h3>
                 <p>Candidate-se agora para ter a oportunidade da sua vida!</p>
             </div>
 
-            <!-- Card: Contato -->
             <div class="card">
                 <i class="ri-phone-fill"></i>
                 <h3>Contato</h3>
@@ -167,17 +129,12 @@
         </div>
     </section>
 
-    <!-- ==========================================
-         RODAPÉ / FOOTER
-         Informações de contato e links rápidos
-         ========================================== -->
+    <!-- Rodapé -->
     <footer>
         <div class="footer">
-            <!-- Coluna com logo e informações da Etec -->
             <div class="footer_col">
                 <img src="img/EtecZL.png" alt="Logo EtecZL">
                 <p>Etec da Zona Leste- Cada vez se superando!</p>
-                <!-- Links das redes sociais -->
                 <ul>
                     <li>
                         <a href=""><i class="ri-instagram-fill"></i>Instagram</a>
@@ -194,7 +151,6 @@
                 </ul>
             </div>
 
-            <!-- Coluna com links de navegação rápida -->
             <div class="footer_col">
                 <p>Links rápidos</p>
                 <ul>
@@ -213,7 +169,6 @@
                 </ul>
             </div>
 
-            <!-- Coluna para receber novidades por email -->
             <div class="footer_col">
                 <h2>Receba novidades</h2>
                 <label for="email_footer">Email</label>
@@ -221,7 +176,6 @@
                 <button type="submit"><i class="ri-mail-line"></i></button>
             </div>
 
-            <!-- Barra de direitos autorais -->
             <div class="footer_direitos">
                 <p>&copy;Etec da Zona Leste- Derik Batinga</p>
             </div>

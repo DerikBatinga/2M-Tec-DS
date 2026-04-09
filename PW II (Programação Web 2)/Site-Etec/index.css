@@ -1,44 +1,35 @@
-/* ==========================================
-   IMPORTAÇÃO DE FONTES DO GOOGLE FONTS
-   ========================================== */
+/* ================================================
+   Configurações básicas/gerais
+   ================================================ */
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-/* ==========================================
-   ESTILOS GERAIS / RESET
-   ========================================== */
+/* Reset básico */
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-/* ==========================================
-   VARIÁVEIS CSS (ROOT)
-   Define as cores e fontes do projeto
-   ========================================== */
+/* Variáveis CSS (cores, fontes) */
 :root {
-    --preto: rgb(6, 6, 6);              /* Cor preta principal */
-    --cinza: #5a5757;                    /* Cor cinza para textos secundários */
-    --branco: rgba(252, 251, 251, 0.9); /* Cor branca com transparência */
-    --principal: #db3434;                /* Cor vermelha principal (acentos) */
-    --secundaria: rgba(255, 240, 240, 0.6); /* Cor rosa claro de fundo */
-    --texto: "Open Sans", sans-serif;    /* Fonte para parágrafos */
-    --subtitulo: "Lato", sans-serif;     /* Fonte para subtítulos */
-    --titulo: "Poppins", sans-serif;     /* Fonte para títulos */
+    --preto: rgb(6, 6, 6);
+    --cinza: #5a5757;
+    --branco: rgba(252, 251, 251, 0.9);
+    --principal: #db3434;
+    --secundaria: rgba(255, 240, 240, 0.6);
+    --texto: "Open Sans", sans-serif;
+    --subtitulo: "Lato", sans-serif;
+    --titulo: "Poppins", sans-serif;
 }
 
-/* ==========================================
-   ESTILOS DO CORPO / BODY
-   ========================================== */
+/* Estilos globais do body e textos */
 body {
-    background: var(--branco);  /* Fundo branco */
+    background: var(--branco);
 }
 
-/* ==========================================
-   ESTILOS DE TIPOGRAFIA
-   ========================================== */
 h1 {
     font-family: var(--titulo);
     font-weight: 700;
@@ -57,10 +48,7 @@ p {
     font-size: 20px;
 }
 
-/* ==========================================
-   CABEÇALHO / HEADER
-   Barra de navegação fixa no topo
-   ========================================== */
+/* Cabeçalho fixo no topo */
 header {
     display: flex;
     position: sticky;
@@ -72,17 +60,13 @@ header {
     height: 100px;
 }
 
-/* ==========================================
-   LOGO DA NAVEGAÇÃO
-   ========================================== */
+/* Logo na navegação */
 .logo_nav {
     height: 100px;
     width: auto;
 }
 
-/* ==========================================
-   LISTA DE NAVEGAÇÃO
-   ========================================== */
+/* Lista de links da navegação */
 .lista_nav {
     display: flex;
     list-style: none;
@@ -100,9 +84,6 @@ header {
     font-size: 1.3rem;
 }
 
-/* ==========================================
-   LINKS DA NAVEGAÇÃO
-   ========================================== */
 .lista_nav a:not(.btn) {
     display: inline-block;
     padding: 10px;
@@ -119,9 +100,11 @@ header {
     transform: scale(1.1);
 }
 
-/* ==========================================
-   BOTÃO / BUTTON
-   ========================================== */
+.hero .btn {
+    margin-top: 20px;
+}
+
+/* Botão principal */
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -141,25 +124,19 @@ header {
     transform: scale(1.1);
 }
 
-/* ==========================================
-   SEÇÃO HERO
-   Banner principal da página inicial
-   ========================================== */
+/* Seção hero (banner principal) */
 .hero {
     text-align: center;
     align-content: center;
     color: var(--branco);
     background:
-        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(img/Etec.webp);
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(img/Etec.webp);
     background-size: 100%;
     height: 50vh;
 }
 
-/* ==========================================
-   CONTAINER GENÉRICO
-   Usado nas seções de conteúdo
-   ========================================== */
+/* Container genérico para conteúdo */
 .container {
     display: flex;
     align-items: center;
@@ -176,7 +153,7 @@ header {
     border-radius: 10px;
 }
 
-/* Container do título e texto */
+/* Container para título e texto */
 .container_titulotexto {
     flex-direction: column;
     margin: 10px;
@@ -189,23 +166,21 @@ header {
     margin-bottom: 20px;
 }
 
-/* ==========================================
-   SEÇÕES DE DESTAQUES E LINKS ÚTEIS
-   ========================================== */
+.container_titulotexto p {
+    margin: 0 50px;
+}
+
 .links_uteis h2,
 .destaques h2 {
     text-align: center;
 }
 
-/* Container dos cards em linha */
+/* Container de cards alinhados */
 .alinhamento_cards {
     display: flex;
 }
 
-/* ==========================================
-   CARD
-   Estilo base para todos os cards
-   ========================================== */
+/* Cards genéricos */
 .card {
     justify-content: space-around;
     padding: 35px 15px;
@@ -231,8 +206,7 @@ header {
     border: 1px var(--principal) solid;
 }
 
-/* Cards de destaques com imagem de fundo */
-/* Card: 2º Lugar na Feteps */
+/* Cards de destaque com imagem de fundo */
 .card_feteps {
     background-repeat: no-repeat;
     background:
@@ -242,7 +216,6 @@ header {
     color: var(--branco);
 }
 
-/* Card: Novo Email Institucional */
 .card_email {
     background:
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
@@ -250,7 +223,6 @@ header {
     color: var(--branco);
 }
 
-/* Card: Aulão de Harvard */
 .card_havard {
     background:
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
@@ -258,7 +230,6 @@ header {
     color: var(--branco);
 }
 
-/* Card: Aluna aprovada na USP */
 .card_usp {
     background:
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
@@ -266,9 +237,7 @@ header {
     color: var(--branco);
 }
 
-/* ==========================================
-   RODAPÉ / FOOTER
-   ========================================== */
+/* Footer */
 .footer {
     display: flex;
     flex-wrap: wrap;
@@ -323,19 +292,14 @@ header {
     width: 100%;
 }
 
-/* ==========================================
-   RESPONSIVIDADE
-   Adapta o layout para telas menores
-   ========================================== */
-
-/* Telas de tamanho médio (tablets) */
+/* Responsividade para tablets */
 @media (max-width: 1024px) {
     .alinhamento_cards {
-        flex-wrap: wrap;  /* Quebra os cards em várias linhas */
+        flex-wrap: wrap;
     }
 
     .card {
-        width: 45%;  /* Reduz largura para caber 2 por linha */
+        width: 45%;
     }
 
     h1 {
@@ -343,18 +307,18 @@ header {
     }
 
     .container {
-        flex-direction: column;  /* Coloca imagem acima do texto */
+        flex-direction: column;
     }
 }
 
-/* Telas pequenas (celulares) */
+/* Responsividade para celulares */
 @media (max-width: 600px) {
     .alinhamento_cards {
-        flex-direction: column;  /* Cards em coluna */
+        flex-direction: column;
     }
 
     .card {
-        width: 100%;  /* Card ocupa toda a largura */
+        width: 100%;
     }
 
     h1 {
@@ -378,6 +342,6 @@ header {
     }
 
     .hero {
-        height: 40vh;  /* Reduz altura do hero */
+        height: 40vh;
     }
 }

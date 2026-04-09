@@ -1,44 +1,35 @@
-/* ==========================================
-   IMPORTAÇÃO DE FONTES DO GOOGLE FONTS
-   ========================================== */
+/* ================================================
+   Configurações básicas/gerais
+   ================================================ */
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-/* ==========================================
-   ESTILOS GERAIS / RESET
-   ========================================== */
+/* Reset básico */
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-/* ==========================================
-   VARIÁVEIS CSS (ROOT)
-   Define as cores e fontes do projeto
-   ========================================== */
+/* Variáveis CSS (cores, fontes) */
 :root {
-    --preto: rgb(6, 6, 6);              /* Cor preta principal */
-    --cinza: #5a5757;                    /* Cor cinza para textos secundários */
-    --branco: rgba(252, 251, 251, 0.9); /* Cor branca com transparência */
-    --principal: #db3434;                /* Cor vermelha principal (acentos) */
-    --secundaria: rgba(255, 240, 240, 0.6); /* Cor rosa claro de fundo */
-    --texto: "Open Sans", sans-serif;    /* Fonte para parágrafos */
-    --subtitulo: "Lato", sans-serif;     /* Fonte para subtítulos */
-    --titulo: "Poppins", sans-serif;     /* Fonte para títulos */
+    --preto: rgb(6, 6, 6);
+    --cinza: #5a5757;
+    --branco: rgba(252, 251, 251, 0.9);
+    --principal: #db3434;
+    --secundaria: rgba(255, 240, 240, 0.6);
+    --texto: "Open Sans", sans-serif;
+    --subtitulo: "Lato", sans-serif;
+    --titulo: "Poppins", sans-serif;
 }
 
-/* ==========================================
-   ESTILOS DO CORPO / BODY
-   ========================================== */
+/* Estilos globais do body e textos */
 body {
-    background: var(--secundaria);  /* Fundo rosa claro */
+    background: var(--secundaria);
 }
 
-/* ==========================================
-   ESTILOS DE TIPOGRAFIA
-   ========================================== */
 h1 {
     font-family: var(--titulo);
     font-weight: 700;
@@ -57,10 +48,7 @@ p {
     font-size: 20px;
 }
 
-/* ==========================================
-   CABEÇALHO / HEADER
-   Barra de navegação fixa no topo
-   ========================================== */
+/* Cabeçalho fixo no topo */
 header {
     display: flex;
     position: sticky;
@@ -72,17 +60,13 @@ header {
     height: 100px;
 }
 
-/* ==========================================
-   LOGO DA NAVEGAÇÃO
-   ========================================== */
+/* Logo na navegação */
 .logo_nav {
     height: 100px;
     width: auto;
 }
 
-/* ==========================================
-   LISTA DE NAVEGAÇÃO
-   ========================================== */
+/* Lista de links da navegação */
 .lista_nav {
     display: flex;
     list-style: none;
@@ -100,9 +84,6 @@ header {
     font-size: 1.3rem;
 }
 
-/* ==========================================
-   LINKS DA NAVEGAÇÃO
-   ========================================== */
 .lista_nav a:not(.btn) {
     display: inline-block;
     padding: 10px;
@@ -119,9 +100,7 @@ header {
     transform: scale(1.1);
 }
 
-/* ==========================================
-   BOTÃO / BUTTON
-   ========================================== */
+/* Botão principal */
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -141,45 +120,34 @@ header {
     transform: scale(1.1);
 }
 
-/* ==========================================
-   SEÇÃO: TÍTULO PRINCIPAL
-   ========================================== */
-/* Centraliza o título "Principais representantes" */
+/* Título centralizado da seção */
 .titulo_section {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 30px 0;       /* Espaço acima e abaixo */
+    margin: 30px 0;
 }
 
 .titulo_section h2 {
-    color: var(--preto);  /* Cor do título */
-    font-style: italic;    /* Estilo itálico */
+    color: var(--preto);
+    font-style: italic;
 }
 
-/* ==========================================
-   CONTAINER DA DIRETORA
-   ========================================== */
-/* Centraliza o container da Diretora */
+/* Container da diretora */
 .container_diretora {
     display: flex;
     justify-content: center;
 }
 
-/* ==========================================
-   CONTAINER DOS COORDENADORES
-   Organiza os coordenadores em linha
-   ========================================== */
+/* Container dos coordenadores */
 .container_coordenadores {
     display: flex;
     justify-content: center;
-    gap: 30px;              /* Espaço entre os containers */
-    flex-wrap: wrap;        /* Quebra linha em telas menores */
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-/* ==========================================
-   CONTAINER GENÉRICO (Diretora/Coordenadores)
-   ========================================== */
+/* Container genérico */
 .container {
     display: flex;
     justify-content: center;
@@ -189,56 +157,44 @@ header {
     border: 1px var(--principal) solid;
     border-radius: 5px;
     width: 50%;
-    min-width: 300px;       /* Largura mínima para não compactar demais */
+    min-width: 300px;
     box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
     padding: 20px;
     margin: 20px;
 }
 
-/* Imagem dentro do container (Diretora/Coordenadores) */
-/* CORREÇÃO: object-fit: cover evita achatamento */
 .container img {
     width: 25%;
-    min-width: 120px;       /* Largura mínima da imagem */
-    max-width: 200px;       /* Largura máxima da imagem */
-    height: auto;            /* Altura automática para manter proporção */
-    aspect-ratio: 1 / 1;     /* Proporção quadrada (1:1) */
-    object-fit: cover;       /* Mantém proporção, recorta o excesso */
-    object-position: center; /* Centraliza a imagem */
+    min-width: 180px;
+    max-width: 240px;
+    height: 150px;
     border-radius: 10px;
     border: 1px var(--cinza) solid;
 }
 
-/* Container do título e texto junto à imagem */
+/* Container de título e texto */
 .container_titulotexto {
     display: flex;
-    flex-direction: column;  /* Organiza em coluna */
+    flex-direction: column;
     margin: 10px;
-    margin-left: 30px;        /* Espaço à esquerda do texto */
+    margin-left: 30px;
 }
 
-/* Título dentro do container_titulotexto */
 .container_titulotexto h2 {
     font-size: 40px;
     font-style: italic;
     margin-bottom: 20px;
-    color: var(--principal); /* Cor vermelha para destaque */
+    color: var(--principal);
 }
 
-/* ==========================================
-   SEÇÃO: BASE DE PROFESSORES
-   ========================================== */
-/* Título "Base dos professores" */
+/* Título das opções de professores */
 .opcoes_professores {
     text-align: center;
     font-style: italic;
-    margin: 40px 0 20px 0;    /* Espaço acima e abaixo */
+    margin: 40px 0 20px 0;
 }
 
-/* ==========================================
-   BOTÕES DAS ABAS DE PROFESSORES
-   ========================================== */
-/* Container dos botões de abas */
+/* Barra de abas de professores */
 .bases_professores {
     display: flex;
     width: 100%;
@@ -249,7 +205,7 @@ header {
     color: var(--branco);
 }
 
-/* Botão individual da aba */
+/* Botões das abas */
 .botao_aba {
     font-size: 28px;
     font-family: var(--texto);
@@ -263,33 +219,28 @@ header {
     transition: 0.3s ease;
 }
 
-/* Botão quando a aba está ativa (selecionada) */
 .botao_aba.ativo {
     background-color: var(--secundaria);
     color: var(--principal);
     border-radius: 5px;
 }
 
-/* Estado hover do botão */
 .botao_aba:hover {
     background-color: var(--branco);
     color: var(--preto);
     border-radius: 5px;
 }
 
-/* ==========================================
-   CARDS DOS PROFESSORES
-   ========================================== */
-/* Container que organiza os cards em linha flexível */
+/* Container dos cards de professores */
 .cards_professores {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;         /* Quebra linha em telas menores */
-    gap: 20px;               /* Espaço entre os cards */
-    padding: 30px;           /* Espaço interno da seção */
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
 }
 
-/* Card individual do professor */
+/* Cards de professores */
 .card {
     display: flex;
     flex-direction: column;
@@ -300,56 +251,46 @@ header {
     border: 1px var(--principal) solid;
     border-radius: 5px;
     width: 30%;
-    min-width: 280px;         /* Largura mínima do card */
+    min-width: 280px;
     box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
     padding: 20px;
     margin: 10px;
-    transition: transform 0.3s ease;  /* Animação suave */
+    transition: transform 0.3s ease;
 }
 
-/* Efeito hover no card */
 .card:hover {
-    transform: scale(1.03);  /* Leve aumento ao passar o mouse */
+    transform: scale(1.03);
 }
 
-/* Imagem do professor (foto de perfil) */
-/* CORREÇÃO: object-fit: cover + aspect-ratio evita achatamento */
 .card img {
     border: 1px var(--cinza) solid;
-    border-radius: 50%;           /* Forma circular */
-    width: 150px;                 /* Largura fixa */
-    height: 150px;                /* Altura fixa igual à largura */
-    object-fit: cover;            /* Mantém proporções sem achatar */
-    object-position: center;       /* Centraliza a imagem */
+    border-radius: 7px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
 }
 
-/* Nome do professor no card */
 .card h2 {
-    margin-top: 15px;             /* Espaço acima do nome */
-    margin-bottom: 10px;          /* Espaço abaixo do nome */
-    text-align: center;           /* Centraliza o texto */
-    font-size: 22px;              /* Tamanho da fonte */
-    color: var(--preto);          /* Cor do texto */
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 22px;
+    color: var(--preto);
 }
 
-/* Descrição/matéria do professor no card */
 .card p {
-    text-align: center;           /* Centraliza o texto */
-    font-size: 16px;              /* Tamanho da fonte */
-    color: var(--cinza);          /* Cor do texto secundário */
+    text-align: center;
+    font-size: 16px;
+    color: var(--cinza);
 }
 
-/* ==========================================
-   CLASSE PARA OCULTAR ELEMENTOS
-   Usada para esconder a aba inativa
-   ========================================== */
+/* Classe para esconder elementos */
 .oculto {
     display: none;
 }
 
-/* ==========================================
-   RODAPÉ / FOOTER
-   ========================================== */
+/* Footer */
 .footer {
     display: flex;
     flex-wrap: wrap;
@@ -404,23 +345,18 @@ header {
     width: 100%;
 }
 
-/* ==========================================
-   RESPONSIVIDADE
-   Adapta o layout para telas menores
-   ========================================== */
-
-/* Telas de tamanho médio (tablets) */
+/* Responsividade para tablets */
 @media (max-width: 1024px) {
     .container {
-        width: 80%;  /* Aumenta largura do container */
+        width: 80%;
     }
 
     .cards_professores {
-        justify-content: center;  /* Centraliza os cards */
+        justify-content: center;
     }
 
     .card {
-        width: 45%;  /* Reduz largura dos cards */
+        width: 45%;
     }
 
     h1 {
@@ -428,35 +364,35 @@ header {
     }
 }
 
-/* Telas pequenas (celulares) */
+/* Responsividade para celulares */
 @media (max-width: 600px) {
     .container {
-        width: 95%;   /* Quase toda a largura */
-        flex-direction: column;  /* Coloca imagem acima do texto */
+        width: 95%;
+        flex-direction: column;
     }
 
     .container img {
-        width: 150px;  /* Reduz tamanho da imagem */
-        height: 150px; /* Mantém quadrada */
+        width: 150px;
+        height: 150px;
     }
 
     .container_coordenadores {
-        flex-direction: column;  /* Coloca coordenadores em coluna */
-        align-items: center;     /* Centraliza */
+        flex-direction: column;
+        align-items: center;
     }
 
     .cards_professores {
-        flex-direction: column;  /* Cards em coluna */
-        align-items: center;     /* Centraliza */
+        flex-direction: column;
+        align-items: center;
     }
 
     .card {
-        width: 90%;  /* Quase toda a largura */
+        width: 90%;
     }
 
     .card img {
-        width: 120px;   /* Reduz tamanho da imagem */
-        height: 120px;  /* Mantém quadrada */
+        width: 120px;
+        height: 120px;
     }
 
     h1 {
