@@ -35,16 +35,16 @@
     <!-- Seção dos principais representantes (diretora e coordenadores) -->
     <section>
         <div class="titulo_section">
-            <h2>Principais representantes</h2>
+            <h2><?php echo"Principais representantes" ?></h2>
         </div>
 
         <div class="container_diretora">
             <div class="container">
                 <img src="../img/Amanda.jpg" alt="Diretora Amanda">
                 <div class="container_titulotexto">
-                    <h2>Diretora - Amanda</h2>
+                    <h2><?php echo"Diretora - Amanda" ?></h2>
                     <p>
-                        Diretora desde 2021, gerencia o financiamento da escola, eventos e refeições
+                        <?php echo"Diretora desde 2021, gerencia o financiamento da escola, eventos e refeições" ?>
                     </p>
                 </div>
             </div>
@@ -54,9 +54,9 @@
             <div class="container">
                 <img src="../img/Jeferson.jpg" alt="Coordenador Jeferson">
                 <div class="container_titulotexto">
-                    <h2>Coordenador - Jeferson</h2>
+                    <h2><?php echo"Coordenador - Jeferson" ?></h2>
                     <p>
-                        Coordenador desde 2018 pelo período da tarde, Coordenador dos cursos AMS
+                        <?php echo"Coordenador desde 2018 pelo período da tarde, Coordenador dos cursos AMS" ?>
                     </p>
                 </div>
             </div>
@@ -64,9 +64,9 @@
             <div class="container">
                 <img src="../img/Rogerio.jpg" alt="Vice-Coordenador Rogerio">
                 <div class="container_titulotexto">
-                    <h2>Vice-Coordenador - Rogerio</h2>
+                    <h2><?php echo"Vice-Coordenador - Rogerio" ?></h2>
                     <p>
-                        Vice-coordenador desde 2018 pelo período da tarde, Coordenador dos cursos AMS
+                        <?php echo"Vice-coordenador desde 2018 pelo período da tarde, Coordenador dos cursos AMS" ?>
                     </p>
                 </div>
             </div>
@@ -76,87 +76,87 @@
     <!-- Seção da base de professores -->
     <section>
         <div class="opcoes_professores">
-            <h2>Base dos professores</h2>
+            <h2><?php echo"Base dos professores" ?></h2>
         </div>
 
         <div class="bases_professores">
-            <button class="botao_aba ativo" onclick="mostrarAba('baseComum')">Base Comum</button>
-            <button class="botao_aba" onclick="mostrarAba('ams')">AMS</button>
+            <button class="botao_aba ativo" onclick="mostrarAba('baseComum')"><?php echo"Base Comum" ?></button>
+            <button class="botao_aba" onclick="mostrarAba('ams')"><?php echo"AMS" ?></button>
         </div>
 
         <div id="baseComum" class="cards_professores">
             <div class="card">
                 <img src="../img/Ivonete.png" alt="Professora Ivonete">
-                <h2>Ivonete dos Santos</h2>
-                <p>Professora de Português pela Etec desde 2004</p>
+                <h2><?php echo"Ivonete dos Santos" ?></h2>
+                <p><?php echo"Professora de Português pela Etec desde 2004" ?></p>
             </div>
 
             <div class="card">
                 <img src="../img/Elpidio.png" alt="Professor Elpidio">
-                <h2>Elpidio Araujo</h2>
-                <p>Professor de Matemática pela Etec desde 2009</p>
+                <h2><?php echo"Elpidio Araujo" ?></h2>
+                <p><?php echo"Professor de Matemática pela Etec desde 2009" ?></p>
             </div>
 
             <div class="card">
                 <img src="../img/Marlon.png" alt="Professor Marlon">
-                <h2>Marlon Marques</h2>
-                <p>Professor de História pela Etec desde 2015</p>
+                <h2><?php echo"Marlon Marques" ?></h2>
+                <p><?php echo"Professor de História pela Etec desde 2015" ?></p>
             </div>
 
             <div class="card">
                 <img src="../img/Erick.png" alt="Professor Erick">
-                <h2>Erick Aura</h2>
-                <p>Professor de Química pela Etec desde 2014</p>
+                <h2><?php echo"Erick Aura" ?></h2>
+                <p><?php echo"Professor de Química pela Etec desde 2014" ?></p>
             </div>
 
             <div class="card">
                 <img src="../img/Rafael.png" alt="Professor Rafael">
-                <h2>Rafael Vitoria</h2>
-                <p>Professor de Geografia pela Etec desde 2016</p>
+                <h2><?php echo"Rafael Vitoria" ?></h2>
+                <p><?php echo"Professor de Geografia pela Etec desde 2016" ?></p>
             </div>
 
             <div class="card">
                 <img src="../img/Cibelle.png" alt="Professora Cibelle">
-                <h2>Cibelle Santos</h2>
-                <p>Professora de Biologia pela Etec desde 2019</p>
+                <h2><?php echo"Cibelle Santos" ?></h2>
+                <p><?php echo"Professora de Biologia pela Etec desde 2019" ?></p>
             </div>
         </div>
 
         <div id="ams" class="cards_professores oculto">
             <div class="card">
                 <img src="../img/Carlos.jpg" alt="Professor Carlos">
-                <h2>Carlos Alberto</h2>
-                <p>Professor de Banco de Dados e Desenvolvimento de Sistemas pela Etec desde 2003</p>
+                <h2><?php echo"Carlos Alberto" ?></h2>
+                <p><?php echo"Professor de Banco de Dados e Desenvolvimento de Sistemas pela Etec desde 2003" ?></p>
             </div>
 
             <div class="card">
                 <img src="../img/Gilmar.jpg" alt="Professor Gilmar">
-                <h2>Gilmar dos Santos</h2>
-                <p>Professor de Programação Web pela Etec desde 2025</p>
+                <h2><?php echo"Gilmar dos Santos" ?></h2>
+                <p><?php echo"Professor de Programação Web pela Etec desde 2025" ?></p>
             </div>
 
             <div class="card">
                 <img src="../img/Salamao.jpg" alt="Professor Salamao">
-                <h2>Salamao dos Santos</h2>
-                <p>Professor de APS pela Etec desde 2024</p>
+                <h2><?php echo"Salamao dos Santos" ?></h2>
+                <p><?php echo"Professor de APS pela Etec desde 2024" ?></p>
             </div>
 
             <div class="card">
                 <img src="../img/Ralf.png" alt="Professor Ralf">
-                <h2>Ralf Geronimo</h2>
-                <p>Professor de Redes pela Etec desde 2017</p>
+                <h2><?php echo"Ralf Geronimo" ?></h2>
+                <p><?php echo"Professor de Redes pela Etec desde 2017" ?></p>
             </div>
 
             <div class="card">
                 <img src="../img/Edna.png" alt="Professora Edna">
-                <h2>Edna Moveis</h2>
-                <p>Professora de Técnicas de Programação e Algoritmo pela Etec desde 2005</p>
+                <h2><?php echo"Edna Moveis" ?></h2>
+                <p><?php echo"Professora de Técnicas de Programação e Algoritmo pela Etec desde 2005" ?></p>
             </div>
 
             <div class="card">
                 <img src="../img/Gustavo.webp" alt="Professor Gustavo">
-                <h2>Gustavo Caetano</h2>
-                <p>Professor de Sistemas Embarcados desde 2008</p>
+                <h2><?php echo"Gustavo Caetano" ?></h2>
+                <p><?php echo"Professor de Sistemas Embarcados desde 2008" ?></p>
             </div>
         </div>
     </section>
@@ -166,44 +166,44 @@
         <div class="footer">
             <div class="footer_col">
                 <img src="../img/EtecZL.png" alt="Logo EtecZL">
-                <p>Etec da Zona Leste- Cada vez se superando!</p>
+                <p><?php echo"Etec da Zona Leste- Cada vez se superando!" ?></p>
                 <ul>
                     <li>
-                        <a href=""><i class="ri-instagram-fill"></i>Instagram</a>
+                        <a href=""><i class="ri-instagram-fill"></i><?php echo"Instagram" ?></a>
                     </li>
                     <li>
-                        <a href=""><i class="ri-youtube-fill"></i>Youtube</a>
+                        <a href=""><i class="ri-youtube-fill"></i><?php echo"Youtube" ?></a>
                     </li>
                     <li>
-                        <a href=""><i class="ri-facebook-box-fill"></i>Facebook</a>
+                        <a href=""><i class="ri-facebook-box-fill"></i><?php echo"Facebook" ?></a>
                     </li>
                     <li>
-                        <a href=""><i class="ri-phone-fill"></i>Telefone</a>
+                        <a href=""><i class="ri-phone-fill"></i><?php echo"Telefone" ?></a>
                     </li>
                 </ul>
             </div>
 
             <div class="footer_col">
-                <p>Links rápidos</p>
+                <p><?php echo"Links rápidos" ?></p>
                 <ul>
                     <li>
-                        <a href="../index.php"> <i class="ri-home-2-fill"></i>Home</a>
+                        <a href="../index.php"> <i class="ri-home-2-fill"></i><?php echo"Home" ?></a>
                     </li>
                     <li>
-                        <a href="../Cursos/cursos.php"> <i class="ri-graduation-cap-fill"></i>Cursos</a>
+                        <a href="../Cursos/cursos.php"> <i class="ri-graduation-cap-fill"></i><?php echo"Cursos" ?></a>
                     </li>
                     <li>
-                        <a href="../Gestão/gestao.php"> <i class="ri-team-fill"></i>Gestão</a>
+                        <a href="../Gestão/gestao.php"> <i class="ri-team-fill"></i><?php echo"Gestão" ?></a>
                     </li>
                     <li>
-                        <a href="../Contato/contato.php"> <i class="ri-phone-fill"></i>Contato</a>
+                        <a href="../Contato/contato.php"> <i class="ri-phone-fill"></i><?php echo"Contato" ?></a>
                     </li>
                 </ul>
             </div>
 
             <div class="footer_col">
-                <h2>Receba novidades</h2>
-                <label for="email_footer">Email</label>
+                <h2><?php echo"Receba novidades" ?></h2>
+                <label for="email_footer"><?php echo"Email" ?></label>
                 <input type="email" name="email" id="email_footer" placeholder="Seu e-mail aqui">
                 <button type="submit"><i class="ri-mail-line"></i></button>
             </div>

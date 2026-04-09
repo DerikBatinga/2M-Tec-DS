@@ -33,43 +33,43 @@
 
     <!-- Seção de cursos -->
     <section class="cursos_secao">
-        <h1 class="cursos_titulo">Nossos Cursos</h1>
+        <h1 class="cursos_titulo"><?php echo"Nossos Cursos" ?></h1>
 
         <div class="cursos_container">
             <div class="card">
                 <img src="../img/AMS.webp" alt="Professor Elpidio">
-                <h2>AMS-Desenvolvimento de Sistemas</h2>
-                <p>Professor de Matemática pela Etec desde 2009</p>
+                <h2><?php echo"AMS-Desenvolvimento de Sistemas" ?></h2>
+                <p><?php echo"Professor de Matemática pela Etec desde 2009" ?></p>
             </div>
 
             <div class="card">
                 <img src="../img/DS.webp" alt="Professor Marlon">
-                <h2>Desenvolvimento de Sistemas</h2>
-                <p>Professor de História pela Etec desde 2015</p>
+                <h2><?php echo"Desenvolvimento de Sistemas" ?></h2>
+                <p><?php echo"Professor de História pela Etec desde 2015" ?></p>
             </div>
 
             <div class="card">
                 <img src="../img/Marketing.webp" alt="Professora Ivonete">
-                <h2>Marketing</h2>
-                <p>Professora de Português pela Etec desde 2004</p>
+                <h2><?php echo"Marketing" ?></h2>
+                <p><?php echo"Professora de Português pela Etec desde 2004" ?></p>
             </div>
 
             <div class="card">
                 <img src="../img/Logistica.webp" alt="Professor Erick">
-                <h2>Logística</h2>
-                <p>Professor de Química pela Etec desde 2014</p>
+                <h2><?php echo"Logística" ?></h2>
+                <p><?php echo"Professor de Química pela Etec desde 2014" ?></p>
             </div>
 
             <div class="card">
                 <img src="../img/Administração.webp" alt="Professor Rafael">
-                <h2>Administração</h2>
-                <p>Professor de Geografia pela Etec desde 2016</p>
+                <h2><?php echo"Administração" ?></h2>
+                <p><?php echo"Professor de Geografia pela Etec desde 2016" ?></p>
             </div>
 
             <div class="card">
                 <img src="../img/SJ.webp" alt="Professora Cibelle">
-                <h2>Sistemas Jurídicos</h2>
-                <p>Professora de Biologia pela Etec desde 2019</p>
+                <h2><?php echo"Sistemas Jurídicos" ?></h2>
+                <p><?php echo"Professora de Biologia pela Etec desde 2019" ?></p>
             </div>
         </div>
     </section>
@@ -79,44 +79,44 @@
         <div class="footer">
             <div class="footer_col">
                 <img src="../img/EtecZL.png" alt="Logo EtecZL">
-                <p>Etec da Zona Leste- Cada vez se superando!</p>
+                <p><?php echo"Etec da Zona Leste- Cada vez se superando!" ?></p>
                 <ul>
                     <li>
-                        <a href=""><i class="ri-instagram-fill"></i>Instagram</a>
+                        <a href=""><i class="ri-instagram-fill"></i><?php echo"Instagram" ?></a>
                     </li>
                     <li>
-                        <a href=""><i class="ri-youtube-fill"></i>Youtube</a>
+                        <a href=""><i class="ri-youtube-fill"></i><?php echo"Youtube" ?></a>
                     </li>
                     <li>
-                        <a href=""><i class="ri-facebook-box-fill"></i>Facebook</a>
+                        <a href=""><i class="ri-facebook-box-fill"></i><?php echo"Facebook" ?></a>
                     </li>
                     <li>
-                        <a href=""><i class="ri-phone-fill"></i>Telefone</a>
+                        <a href=""><i class="ri-phone-fill"></i><?php echo"Telefone" ?></a>
                     </li>
                 </ul>
             </div>
 
             <div class="footer_col">
-                <p>Links rápidos</p>
+                <p><?php echo"Links rápidos" ?></p>
                 <ul>
                     <li>
-                        <a href="../index.php"> <i class="ri-home-2-fill"></i>Home</a>
+                        <a href="../index.php"> <i class="ri-home-2-fill"></i><?php echo"Home" ?></a>
                     </li>
                     <li>
-                        <a href="../Cursos/cursos.php"> <i class="ri-graduation-cap-fill"></i>Cursos</a>
+                        <a href="../Cursos/cursos.php"> <i class="ri-graduation-cap-fill"></i><?php echo"Cursos" ?></a>
                     </li>
                     <li>
-                        <a href="../Gestão/gestao.php"> <i class="ri-team-fill"></i>Gestão</a>
+                        <a href="../Gestão/gestao.php"> <i class="ri-team-fill"></i><?php echo"Gestão" ?></a>
                     </li>
                     <li>
-                        <a href="../Contato/contato.php"> <i class="ri-phone-fill"></i>Contato</a>
+                        <a href="../Contato/contato.php"> <i class="ri-phone-fill"></i><?php echo"Contato" ?></a>
                     </li>
                 </ul>
             </div>
 
             <div class="footer_col">
-                <h2>Receba novidades</h2>
-                <label for="email_footer">Email</label>
+                <h2><?php echo"Receba novidades" ?></h2>
+                <label for="email_footer"><?php echo"Email" ?></label>
                 <input type="email" name="email" id="email_footer" placeholder="Seu e-mail aqui">
                 <button type="submit"><i class="ri-mail-line"></i></button>
             </div>
