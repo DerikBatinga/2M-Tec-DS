@@ -161,10 +161,6 @@ header {
     transform: scale(1.03);
 }
 
-.card:hover img {
-    border-radius: ;
-}
-
 .card img {
     border: 1px var(--cinza) solid;
     border-radius: 7px;
