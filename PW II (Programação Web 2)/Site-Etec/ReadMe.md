@@ -26,7 +26,6 @@ Site-Etec/
 - **Home** — Apresentação da escola
 ![a46886e9-e7f9-47b6-b68b-c7623f7ba54b](https://github.com/user-attachments/assets/b9b9b7e6-6b3f-4e3f-9355-08dee9c1be10)
 ![b0470ff4-4099-4e66-bc17-193b7798f843](https://github.com/user-attachments/assets/241218d5-c801-47dd-8a3f-d522fae775d6)
-![89479bc4-fbb2-448f-889c-d48a91868dfc](https://github.com/user-attachments/assets/2b4b5591-7860-4415-99ce-5058ff0b4d93)
 
 - **Cursos** — Informações sobre os cursos técnicos oferecidos
 - ![d4a45d3a-5480-478b-8b74-f02d593739c8](https://github.com/user-attachments/assets/1753b896-c7a1-404e-8686-686d91824aa2)
