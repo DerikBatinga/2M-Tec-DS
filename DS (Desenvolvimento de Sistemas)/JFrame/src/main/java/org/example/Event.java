@@ -78,6 +78,7 @@ public class Event extends JFrame{
                                 n1 = Integer.parseInt(Tnum1.getText()),
                                 n2 = Integer.parseInt(Tnum2.getText()),
                                 pl = n1-n2;
+
                         result.setVisible(true);
                         result.setText("The result is:"+pl);
                     }
