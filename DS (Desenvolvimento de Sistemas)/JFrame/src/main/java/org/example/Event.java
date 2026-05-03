@@ -61,10 +61,10 @@ public class Event extends JFrame{
 
         plus.addActionListener(new ActionListener(){
               public void actionPerformed(ActionEvent e){
-                  int
+                  double
                           n1 = Integer.parseInt(Tnum1.getText()),
                           n2 = Integer.parseInt(Tnum2.getText()),
-                          pl = n1+n2;
+                          pl = plus(n1,n2);
 
                   result.setVisible(true);
                   result.setText("The result is:"+pl);
@@ -74,10 +74,10 @@ public class Event extends JFrame{
         minus.addActionListener(
                 new ActionListener(){
                     public void actionPerformed(ActionEvent e){
-                        int
+                        double
                                 n1 = Integer.parseInt(Tnum1.getText()),
                                 n2 = Integer.parseInt(Tnum2.getText()),
-                                pl = n1-n2;
+                                pl = minus(n1,n2);
 
                         result.setVisible(true);
                         result.setText("The result is:"+pl);
@@ -90,7 +90,8 @@ public class Event extends JFrame{
                         double
                                 n1 = Integer.parseInt(Tnum1.getText()),
                                 n2 = Integer.parseInt(Tnum2.getText()),
-                                pl = n1*n2;
+                                 pl = mult(n1,n2);
+
                         result.setVisible(true);
                         result.setText("The result is:"+pl);
                     }
@@ -102,7 +103,8 @@ public class Event extends JFrame{
                         double
                                 n1 = Integer.parseInt(Tnum1.getText()),
                                 n2 = Integer.parseInt(Tnum2.getText()),
-                                pl = n1/n2;
+                                pl = div(n1,n2);
+
                         result.setVisible(true);
                         result.setText("The result is:"+pl);
                     }
@@ -114,7 +116,7 @@ public class Event extends JFrame{
                         double
                                 n1 = Integer.parseInt(Tnum1.getText()),
                                 n2 = Integer.parseInt(Tnum2.getText()),
-                                pl = Math.sqrt(n1+n2);
+                                pl = sqrt(n1,n2);
 
                         result.setVisible(true);
                         result.setText("The result is:"+pl);
@@ -134,4 +136,22 @@ public class Event extends JFrame{
         Event app = new Event();
         app.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
+    static double plus(double n, double m){
+        return n + m;
+    }
+    static double minus(double n, double m){
+        return n - m;
+    }
+    static double mult(double n, double m){
+        return n * m;
+    }
+    static Double div(double n, double m) {
+        if (m == 0 || n == 0){
+            return(0.0);
+        }
+        else{
+            return (n/m);
+        }
+    }
+    static double sqrt(double n, double m){ return Math.sqrt(n+m); }
 }
