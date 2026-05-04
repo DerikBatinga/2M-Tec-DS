@@ -39,6 +39,7 @@ public class primeiraJanela extends JFrame {
         this.texto5 = new JTextField();
         this.texto6 = new JTextField();
         this.texto7 = new JTextField();
+
         this.titulo.setBounds(170, 20, 200, 20);
         this.titulo.setForeground(Color.red);
         this.titulo.setFont(new Font("Arial", 1, 18));
