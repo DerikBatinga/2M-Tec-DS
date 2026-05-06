@@ -12,9 +12,9 @@ public class Event {
 
     private void calc(String op) {
         try {
-            double n1 = Double.parseDouble(JFrames.Tnum1.getText()),
-                   n2 = Double.parseDouble(JFrames.Tnum2.getText()),
-                   res = 0;
+            double  n1 = Double.parseDouble(JFrames.Tnum1.getText()),
+                    n2 = Double.parseDouble(JFrames.Tnum2.getText()),
+                    res = 0;
 
             switch (op) {
                 case "plus"  -> res = Calc.plus(n1, n2);
