@@ -1,9 +1,8 @@
-import org.example.Calculadora.JFrames;
+import org.example.Calculadora.CalcJframe;
 
 import javax.swing.*;
-import java.awt.*;
 
 void main(String[] args) {
-    JFrames app = new JFrames();
+    CalcJframe app = new CalcJframe();
     app.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 }

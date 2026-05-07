@@ -2,7 +2,13 @@ package org.example.Calculadora;
 
 import java.awt.event.ActionListener;
 
-public class Event {
+public class btnEvent {
+
+    CalcJframe calcJframe;
+
+    public btnEvent(CalcJframe frame) {
+        this.calcJframe = frame;
+    }
 
     ActionListener pl = e -> calc("plus");
     ActionListener mi = e -> calc("minus");
@@ -12,8 +18,8 @@ public class Event {
 
     private void calc(String op) {
         try {
-            double  n1 = Double.parseDouble(JFrames.Tnum1.getText()),
-                    n2 = Double.parseDouble(JFrames.Tnum2.getText()),
+            double  n1 = Double.parseDouble(calcJframe.getTnum1()),
+                    n2 = Double.parseDouble(calcJframe.getTnum2()),
                     res = 0;
 
             switch (op) {
@@ -24,12 +30,10 @@ public class Event {
                 case "sqrt"  -> res = Calc.sqrt(n1, n2);
             }
 
-            JFrames.result.setVisible(true);
-            JFrames.result.setText("The result is: " + res);
+           calcJframe.setResult(res);
 
         } catch (NumberFormatException e) {
-            JFrames.result.setVisible(true);
-            JFrames.result.setText("Invalid Number!");
+            calcJframe.setRes("Invalid number!");
         }
     }
 }
