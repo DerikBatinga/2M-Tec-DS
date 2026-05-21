@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercicios 3</title>
+</head>
+<body>
+    <div class="titulo">
+        <h1>Exercicios 3- PHP</h1>
+    </div>
+
+    <div class="form">
+    <fieldset>
+        <legend>Tabuada</legend>
+            <form action="processa.php" method="post">
+                <label for="">Digite o número que gostaria de ver a tabuada:</label> <br>
+                <input type="text" placeholder="Valor" name="tabuada">
+
+                <div class="btn">
+                    <button type="submit" name="tabuadaBtn" value="tabuadaBtn">Enviar</button>
+                </div>
+            </form>
+        </div>    
+    </fieldset>
+
+    <div class="form">
+    <fieldset>
+        <legend>Desconto</legend>
+            <form action="processa.php" method="post">
+                <label for="">Digite o valor do produto:</label> <br>
+                <input type="text" placeholder="Valor" name="valor"><br>
+
+                <label for="">Digite a porcentagem do desconto:</label> <br>
+                <input type="text" placeholder="Desconto" name="desconto">
+                <div class="btn">
+                    <button type="submit" name="descontoBtn" value="descontoBtn">Enviar</button>
+                </div>  
+            </form>
+        </div>    
+    </fieldset>      
+
+    <div class="form">
+    <fieldset>
+        <legend>Passou ou não</legend>
+            <form action="processa.php" method="post">
+                <label for="">Média 1⁰bimestre:</label> <br>
+                <input type="text" placeholder="Media" name="bimUm"><br>
+
+                <label for="">Média 2⁰bimestre:</label> <br>
+                <input type="text" placeholder="Media" name="bimDois"><br>
+
+                <label for="">Média 3⁰bimestre:</label> <br>
+                <input type="text" placeholder="Media" name="bimTres"><br>
+
+                <label for="">Média 4⁰bimestre:</label> <br>
+                <input type="text" placeholder="Media" name="bimQuatro">
+                <div class="btn">
+                    <button type="submit" name="passouBtn" value="passsouBtn">Enviar</button>
+                </div>  
+            </form>
+        </div>    
+    </fieldset>     
+
+    <div class="form">
+    <fieldset>
+        <legend>Troca de valores</legend>
+            <form action="processa.php" method="post">
+                <label for="">Digite o primeiro valor:</label> <br>
+                <input type="text" placeholder="Valor" name="valorUm"><br>
+
+                <label for="">Digite o segundo valor:</label> <br>
+                <input type="text" placeholder="Valor" name="valorDois">
+                <div class="btn">
+                    <button type="submit" name="trocaValBtn" value="trocaValBtn">Enviar</button>
+                </div>  
+            </form>
+        </div>    
+    </fieldset>  
+
+    <div class="form">
+    <fieldset>
+        <legend>Soma ao quadrado</legend>
+            <form action="processa.php" method="post">
+                <label for="">Primeiro valor:</label> <br>
+                <input type="text" placeholder="Numero" name="num"><br>
+
+                <label for="">Segundo valor:</label> <br>
+                <input type="text" placeholder="Numero" name="numDois"><br>
+
+                <label for="">Terceiro valor:</label> <br>
+                <input type="text" placeholder="Numero" name="numTres">
+                <div class="btn">
+                    <button type="submit" name="quadradoBtn" value="quadradoBtn">Enviar</button>
+                </div>  
+            </form>
+        </div>    
+    </fieldset>   
+
+    <div class="form">
+        <fieldset>
+        <legend>Salario com impostos</legend>
+            <form action="processa.php" method="post">
+                <label for="">Digite seu salário bruto:</label> <br>
+                <input type="text" placeholder="Salario" name="salario">
+
+                <div class="btn">
+                    <button type="submit" name="salarioBtn" value="salarioBtn">Enviar</button>
+                </div>
+            </form>
+        </div>    
+    </fieldset>
+
+    <div class="form">
+    <fieldset>
+        <legend>Calculadora de média</legend>
+            <form action="processa.php" method="post">
+                <label for="">Nota 1:</label> <br>
+                <input type="text" placeholder="Nota" name="notaUm"><br>
+
+                <label for="">Nota 2:</label> <br>
+                <input type="text" placeholder="Nota" name="notaDois"><br>
+
+                <label for="">Nota 3:</label> <br>
+                <input type="text" placeholder="Nota" name="notaTres"><br>
+
+                <label for="">Nota 4:</label> <br>
+                <input type="text" placeholder="Nota" name="notaQuatro">
+                <div class="btn">
+                    <button type="submit" name="notaBtn" value="notaBtn">Enviar</button>
+                </div>  
+            </form>
+        </div>    
+    </fieldset>     
+
+    <div class="form">
+      <fieldset>
+        <legend>Maior número</legend>
+            <form action="processa.php" method="post">
+                <label for="">Primeiro valor:</label> <br>
+                <input type="text" placeholder="Numero" name="numCompUm"><br>
+
+                <label for="">Segundo valor:</label> <br>
+                <input type="text" placeholder="Numero" name="numCompDois"><br>
+
+                <label for="">Terceiro valor:</label> <br>
+                <input type="text" placeholder="Numero" name="numCompTres">
+                <div class="btn">
+                    <button type="submit" name="compBtn" value="compBtn">Enviar</button>
+                </div>  
+            </form>
+        </div>    
+    </fieldset>   
+
+
+    <div class="form">
+    <fieldset>
+        <legend>Impares em intervalo</legend>
+            <form action="processa.php" method="post">
+                <label for="">Digite o intervalo um:</label> <br>
+                <input type="text" placeholder="Intervalo" name="intervaloUm"><br>
+
+                <label for="">Digite o intervalo dois:</label> <br>
+                <input type="text" placeholder="Intervalo" name="intervaloDois">
+                <div class="btn">
+                    <button type="submit" name="intervaloBtn" value="intervaloBtn">Enviar</button>
+                </div>  
+            </form>
+        </div>    
+    </fieldset> 
+
+    <div class="form">
+    <fieldset>
+        <legend>Par ou impar</legend>
+            <form action="processa.php" method="post">
+                <label for="">Digite o valor para verificação:</label> <br>
+                <input type="text" placeholder="Valor" name="parImpar">
+
+                <div class="btn">
+                    <button type="submit" name="parImparBtn" value="parImparBtn">Enviar</button>
+                </div>
+            </form>
+        </div>    
+    </fieldset>
+
+    <div class="form">
+    <form action="processa.php" method="post">
+        <fieldset>
+        <legend>Calculadora</legend>
+                <label for="">Primeiro valor:</label> <br>
+                <input type="text" placeholder="Numero" name="ValUm"><br>
+
+                <label for="">Segundo valor:</label> <br>
+                <input type="text" placeholder="Numero" name="valUm"><br>
+
+                <label for="">Operador:</label> <br>
+                <input type="text" placeholder="+, -, * ou /" name="operador">
+                <div class="btn">
+                    <button type="submit" name="calculadoraBtn" value="calculadoraBtn">Enviar</button>
+                </div>  
+            </form>
+        </div>    
+    </fieldset>   
+    
+    <div class="form">
+     <fieldset>
+        <legend>Impares decrescentes</legend>
+            <form action="processa.php" method="post">
+                <label for="">Primeiro valor:</label> <br>
+                <input type="text" placeholder="Numero" name="InterUm"><br>
+
+                <label for="">Segundo valor:</label> <br>
+                <input type="text" placeholder="Numero" name="InterDois"><br>
+
+                <div class="btn">
+                    <button type="submit" name="interBtn" value="interBtn">Enviar</button>
+                </div>  
+            </form>
+        </div>    
+    </fieldset>   
+
+</body>
+</html>
