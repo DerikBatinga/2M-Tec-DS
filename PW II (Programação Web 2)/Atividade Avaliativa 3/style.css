@@ -1,42 +1,51 @@
- body {
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+ 
+body {
     position: relative;
-    background: #010011;
+    background:
+            linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+            url(img/background.png);
+    background-size: 120rem;
     height: 100vh;                 
     justify-content: center; 
     align-items: center;     
     margin: 0;
-        }
+}
 fieldset{
-    border: 1px;
+    border: 1px;    
     box-shadow: 0 0 10px #999;
     border-radius: 10px ;
     width: 20rem;
 }
+legend{
+    font-size: 25px;
+    color: #5313a7;
+}
 p{
-     color: #c0c6ce;
-     font-family: "Playpen Sans", sans-serif;
-     display: flex;
-     justify-content: center;
+    color: #c0c6ce;
+    font-family: "Press Start 2P", system-ui;
+    display: flex;
+    justify-content: center;
+}
+.titulo, h3{
+    display: flex;
+    color: #5313a7;
+    justify-content: center;
+    margin: 50px;
+    font-size: 30px;
+    font-family: "Press Start 2P", system-ui;
 }
 .res{  
     border: 1px solid;
     border-color: #999;
 }
-.titulo{
-    display: flex;
-    color: #c0c6ce;
-    justify-content: center;
-    margin: 50px;
-    font-size: 30px;
-    font-family: "Playpen Sans", sans-serif;
-}
-        
+
 .form{
     display: flex;
     justify-content: center;
     color: #c0c6ce;
     font-size: 20px;
-    font-family: "Playpen Sans", sans-serif;
+    font-family: "Press Start 2P", system-ui;
     border-radius: 15px;
     padding: 20px 40px;
     text-align: center;
