@@ -29,6 +29,13 @@ Site-Etec/
 <img width="1524" height="758" alt="WhatsApp Image 2026-06-25 at 17 07 25" src="https://github.com/user-attachments/assets/c4299fa7-8abf-4c6f-9e64-ef4a9a7267d0" />
 
 
+
+
+
+
+
+
+
 - **Home** — Apresentação da escola
 ![a46886e9-e7f9-47b6-b68b-c7623f7ba54b](https://github.com/user-attachments/assets/b9b9b7e6-6b3f-4e3f-9355-08dee9c1be10)
 ![b0470ff4-4099-4e66-bc17-193b7798f843](https://github.com/user-attachments/assets/241218d5-c801-47dd-8a3f-d522fae775d6)
