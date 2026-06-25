@@ -23,6 +23,12 @@ Site-Etec/
 
 ## :bookmark: Seções
 
+- **Contato** — Formulário para contato
+<img width="1538" height="767" alt="WhatsApp Image 2026-06-25 at 17 03 50" src="https://github.com/user-attachments/assets/ceb5a839-bac5-46df-ba0c-6cbd4c726379" />
+<img width="1527" height="761" alt="WhatsApp Image 2026-06-25 at 17 05 22" src="https://github.com/user-attachments/assets/63797db8-2864-43fa-aa1d-1a912dd1b7f6" />
+<img width="1524" height="758" alt="WhatsApp Image 2026-06-25 at 17 07 25" src="https://github.com/user-attachments/assets/c4299fa7-8abf-4c6f-9e64-ef4a9a7267d0" />
+
+
 - **Home** — Apresentação da escola
 ![a46886e9-e7f9-47b6-b68b-c7623f7ba54b](https://github.com/user-attachments/assets/b9b9b7e6-6b3f-4e3f-9355-08dee9c1be10)
 ![b0470ff4-4099-4e66-bc17-193b7798f843](https://github.com/user-attachments/assets/241218d5-c801-47dd-8a3f-d522fae775d6)
@@ -36,8 +42,5 @@ Site-Etec/
 ![583fa83a-615e-44cd-b908-e3eabee0fc17](https://github.com/user-attachments/assets/882b581e-0cd6-4bfb-8aa7-975a6398540e)
 ![f743493f-b22d-467e-bde6-e8cfb2d5f121](https://github.com/user-attachments/assets/8cfba0aa-47e3-4c7a-a84f-14979e6898d8)
 
-- **Contato** — Formulário para contato
-![d3e767d7-f14e-4cb8-a6d7-ed620e2828ab](https://github.com/user-attachments/assets/42df45f2-c92f-4afd-9b3d-3bf5e933aa27)
-![2ec7a16b-3d77-4953-9308-1949363b5d93](https://github.com/user-attachments/assets/ca9f04fe-9051-4b6d-a8ae-339dda1e12f6)
 
   
