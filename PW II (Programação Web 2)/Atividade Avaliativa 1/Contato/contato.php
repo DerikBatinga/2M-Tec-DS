@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contato.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    
     <title>EtecZL-Contato</title>
 </head>
 <body>
-    <!-- Cabeçalho com logo e navegação -->
     <header class="header">
         <img class="logo_nav" src="../img/EtecZL.png" alt="Logo EtecZL">
         <nav>
@@ -31,18 +31,15 @@
         </nav>
     </header>
 
-    <!-- Seção do formulário de contato -->
     <section>
         <div class="form">
-            <!-- Imagem lateral com informações de contato -->
             <div class="imagemlateral">
                 <h2><?php echo"Entre em contato" ?></h2>
                 <p><?php echo"Sinta-se livre para tirar dúvidas na secretaria!" ?></p>
                 <span><?php echo"(11) 99999-9999" ?></span>
             </div>
 
-            <!-- Formulário -->
-            <form action="processa.php" method="post">
+            <form id="form_contato" action="processa.php" method="post">
                 <div class="form_container">
                     <div class="form_titulo">
                         <h2><?php echo"Contate" ?></h2>
@@ -83,7 +80,6 @@
         </div>
     </section>
 
-    <!-- Rodapé -->
     <footer>
         <div class="footer">
             <div class="footer_col">
@@ -132,5 +128,6 @@
             </div>
         </div>
     </footer>
+    <script src="contato.js" defer></script>
 </body>
 </html>
