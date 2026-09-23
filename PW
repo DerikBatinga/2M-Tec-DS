@@ -1,0 +1,15 @@
+<?php
+// Configurações padrão do XAMPP
+$host = 'localhost';
+$dbname = 'pet';
+$user = 'root'; 
+$pass = '963339272Derik217'; 
+
+try {
+    $pdo = new PDO("mysql:unix_socket=/tmp/mysqld/mysqld.sock;dbname=$dbname;charset=utf8", $user, $pass);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Erro ao conectar com o banco de dados: " . $e->getMessage());
+}
+//-Opencode
+?>
