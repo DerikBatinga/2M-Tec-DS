@@ -1,0 +1,158 @@
+/* ==========================================
+   ESTILO GERAL DO SISTEMA PET-SHOP
+   ========================================== */
+
+/* Cores da paleta existente */
+:root {
+    --primary: #5E17EB;   /* Roxo principal */
+    --secondary: #F0EEDF; /* Bege claro */
+    --background: rgb(255, 251, 244); /* Off-white */
+}
+
+/* Corpo da página */
+body {
+    position: relative;
+    background: var(--secondary);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: "Playpen Sans", sans-serif;
+    color: var(--primary);
+}
+
+/* Container centralizado para todos os cards e tabelas */
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Tabela de dados - cabeçalho */
+.tabela-column {
+    color: var(--background);
+    font-size: 20px;
+    font-family: "Playpen Sans", sans-serif;
+    background: var(--primary);
+    border-radius: 15px;
+    padding: 12px 20px;
+    font-weight: bold;
+}
+
+/* Estilização da tabela principal */
+table {
+    width: 100%;
+    background: var(--background);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+/* Linhas alternadas levemente diferenciadas */
+.tbody tr:nth-child(even) {
+    background-color: rgba(94, 23, 235, 0.03);
+}
+
+/* ==========================================
+   BOTÕES DE AÇÃO
+   ========================================== */
+
+/* Botão principal roxo */
+.btn-purple {
+    display: inline-block;
+    background: var(--primary);
+    color: var(--secondary);
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "Playpen Sans", sans-serif;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Botão bege (alternativo) */
+.btn-beige {
+    display: inline-block;
+    background: var(--secondary);
+    color: var(--primary);
+    padding: 8px 16px;
+    margin: 0 0 5px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "Playpen Sans", sans-serif;
+    font-size: 14px;
+    border: 1px solid var(--primary);
+}
+
+/* Botão texto/sem fundo */
+.btn-light {
+    display: inline-block;
+    background: transparent;
+    color: var(--primary);
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "Playpen Sans", sans-serif;
+    font-size: 14px;
+    border: 1px solid var(--primary);
+}
+
+/* ==========================================
+   FORMULÁRIOS DE CREATE / UPDATE
+   ========================================== */
+
+/* Rótulo dos campos */
+.form-label {
+    font-family: "Playpen Sans", sans-serif;
+    font-size: 13px;
+    color: var(--primary);
+    margin-bottom: 4px;
+    display: block;
+    font-weight: 500;
+}
+
+/* Campos de input - tamanho reduzido */
+.form-input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    font-family: "Playpen Sans", sans-serif;
+    font-size: 13px;
+    background: var(--background);
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+
+/* Reduzido ainda mais para campos numéricos */
+.form-input-small {
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+/* ==========================================
+   CARDS
+   ========================================== */
+.card {
+    background: var(--background);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.card-title {
+    color: var(--primary);
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: "Playpen Sans", sans-serif;
+}
