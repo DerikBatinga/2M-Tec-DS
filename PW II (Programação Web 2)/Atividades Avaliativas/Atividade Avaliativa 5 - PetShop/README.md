@@ -56,6 +56,15 @@ Sistema web de gerenciamento para um petshop, desenvolvido em PHP com arquitetur
 ├── pet.sql              # Script SQL para criação das tabelas
 └── README.md            # Este arquivo
 ```
+## Telas
+
+<img width="1180" height="834" alt="image" src="https://github.com/user-attachments/assets/a654433d-2226-407c-b195-17fda092bfea" />
+
+<img width="493" height="399" alt="image" src="https://github.com/user-attachments/assets/21c0d855-02f1-485f-b0c8-a740702d70b8" />
+
+<img width="319" height="300" alt="image" src="https://github.com/user-attachments/assets/225573ec-af48-49b0-a906-32f23e48f7ab" />
+
+<img width="1077" height="861" alt="image" src="https://github.com/user-attachments/assets/6588b5b3-b834-4183-ab35-ecb269466eeb" />
 
 ## Requisitos
 
