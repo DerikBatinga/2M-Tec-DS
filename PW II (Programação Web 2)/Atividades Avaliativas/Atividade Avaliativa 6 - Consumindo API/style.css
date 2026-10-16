@@ -1,0 +1,278 @@
+:root { /* Configurações gerais e variáveis de cor reutilizadas com var(). */
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; /* Define a sequência de fontes; o navegador usa a primeira disponível. */
+    --principal-color:#10214C; /* Variável com a cor principal dos textos e botões. */
+    --secundaria-color:#a2cfe7; /* Variável com a cor secundária usada nos destaques. */
+    --terciaria-color:#698D4A; /* Variável com o verde usado em bordas e detalhes. */
+    --fundo-elementos:#fefffb; /* Variável com a cor de fundo dos elementos. */
+    --fundo-color:#f6f7f4; /* Variável com a cor de fundo da página. */
+    color:var(--principal-color); /* Define a cor do texto; var() lê uma variável e inherit herda a cor do elemento pai. */
+    font-synthesis:none; /* Impede a criação artificial de negrito ou itálico quando a fonte não oferece essas variações. */
+}
+
+* { /* Aplica a regra a todos os elementos. */
+    box-sizing:border-box; /* Inclui borda e preenchimento no cálculo da largura e da altura. */
+}
+
+body { /* Corpo da página. */
+    background:var(--fundo-color); /* Define o fundo do elemento usando a cor indicada. */
+    margin:0; /* Define o espaço externo; auto centraliza horizontalmente um bloco com largura limitada. */
+}
+
+main { /* Área principal que reúne o conteúdo. */
+    background-color: var(--fundo-elementos); /* Define a cor de fundo. */
+    max-width:1000px; /* Limita a largura para o conteúdo não se espalhar demais em telas grandes. */
+    margin:auto; /* Define o espaço externo; auto centraliza horizontalmente um bloco com largura limitada. */
+    padding:50px 56px; /* Define o espaço interno; dois valores representam vertical e horizontal. */
+}
+
+header { /* Cabeçalho com logo, nome e selo. */
+    position:sticky; /* sticky mantém o elemento no fluxo e o prende ao limite definido por top durante a rolagem. */
+    background:var(--fundo-elementos); /* Define o fundo do elemento usando a cor indicada. */
+    top:0; /* Define o limite superior usado pelo posicionamento sticky. */
+    z-index:2; /* Controla a ordem de sobreposição do elemento posicionado. */
+    padding:12px 0; /* Define o espaço interno; dois valores representam vertical e horizontal. */
+    display:flex; /* Escolhe o layout: flex alinha itens, grid cria uma grade, block cria um bloco e none oculta. */
+    align-items:center; /* Alinha os itens no eixo transversal do contêiner flex. */
+    justify-content:space-between; /* Distribui os itens no eixo principal; space-between deixa espaço entre eles. */
+    gap:20px; /* Define o espaço entre itens de um layout flex ou grid. */
+}
+
+h1 { /* Título principal da página. */
+    font-size:clamp(40px,7vw,68px); /* Define o tamanho da fonte; clamp limita um tamanho variável entre um mínimo e um máximo. */
+    letter-spacing:-3px; /* Ajusta a distância entre as letras; valores negativos as aproximam. */
+    line-height:1.08; /* Define a altura das linhas de texto. */
+    margin:18px 0 22px; /* Define o espaço externo; auto centraliza horizontalmente um bloco com largura limitada. */
+    font-weight:650; /* Define o peso da fonte; valores maiores deixam o texto mais encorpado. */
+}
+
+h2 { /* Título com o nome da cidade. */
+    font-size:25px; /* Define o tamanho da fonte; clamp limita um tamanho variável entre um mínimo e um máximo. */
+    margin:10px 0; /* Define o espaço externo; auto centraliza horizontalmente um bloco com largura limitada. */
+    letter-spacing:-.5px; /* Ajusta a distância entre as letras; valores negativos as aproximam. */
+}
+
+h3 { /* Títulos de terceiro nível, se existirem no HTML. */
+    font-size:16px; /* Define o tamanho da fonte; clamp limita um tamanho variável entre um mínimo e um máximo. */
+    margin-top:27px; /* Define o espaço externo acima do elemento. */
+}
+
+label { /* Rótulo do campo de pesquisa. */
+    display:block; /* Escolhe o layout: flex alinha itens, grid cria uma grade, block cria um bloco e none oculta. */
+    font-weight:650; /* Define o peso da fonte; valores maiores deixam o texto mais encorpado. */
+    font-size:14px; /* Define o tamanho da fonte; clamp limita um tamanho variável entre um mínimo e um máximo. */
+    margin-bottom:12px; /* Define o espaço externo abaixo do elemento. */
+}
+
+input { /* Campo em que o usuário digita a cidade. */
+    min-width:0; /* Define a largura mínima; zero permite que o campo encolha dentro do flex. */
+    flex:1; /* Permite que o item cresça e ocupe o espaço disponível no contêiner flex. */
+    border:1px solid var(--terciaria-color); /* Define espessura, estilo e cor da borda. */
+    border-radius:9px; /* Arredonda os cantos do elemento. */
+    padding:16px; /* Define o espaço interno; dois valores representam vertical e horizontal. */
+    font:inherit; /* Herdar a fonte faz o controle usar a tipografia do elemento pai. */
+    background:var(--fundo-elementos); /* Define o fundo do elemento usando a cor indicada. */
+    color:var(--principal-color); /* Define a cor do texto; var() lê uma variável e inherit herda a cor do elemento pai. */
+}
+
+input::placeholder { /* Texto de exemplo exibido quando o campo está vazio. */
+    color:var(--principal-color); /* Define a cor do texto; var() lê uma variável e inherit herda a cor do elemento pai. */
+    opacity:.7; /* Controla a opacidade: 1 é opaco e 0 é completamente transparente. */
+}
+
+button { /* Botão de consulta. */
+    background:var(--principal-color); /* Define o fundo do elemento usando a cor indicada. */
+    color:var(--fundo-color); /* Define a cor do texto; var() lê uma variável e inherit herda a cor do elemento pai. */
+    border:0; /* Define espessura, estilo e cor da borda. */
+    border-radius:9px; /* Arredonda os cantos do elemento. */
+    padding:15px 26px; /* Define o espaço interno; dois valores representam vertical e horizontal. */
+    font:inherit; /* Herdar a fonte faz o controle usar a tipografia do elemento pai. */
+    font-weight:650; /* Define o peso da fonte; valores maiores deixam o texto mais encorpado. */
+    cursor:pointer; /* Define o ponteiro: pointer indica ação e wait indica espera. */
+}
+
+button:hover { /* Aparência do botão quando o ponteiro está sobre ele. */
+    transition: .5s ease-in-out; /* Suaviza a mudança de propriedades ao entrar neste estado; .5s corresponde a meio segundo. */
+    color:var(--principal-color); /* Define a cor do texto; var() lê uma variável e inherit herda a cor do elemento pai. */
+    background:var(--secundaria-color); /* Define o fundo do elemento usando a cor indicada. */
+}
+
+button:disabled { /* Aparência do botão desabilitado durante a consulta. */
+    opacity:.65; /* Controla a opacidade: 1 é opaco e 0 é completamente transparente. */
+    cursor:wait; /* Define o ponteiro: pointer indica ação e wait indica espera. */
+}
+
+input:focus-visible,button:focus-visible,a:focus-visible { /* Destaque do foco, especialmente ao navegar com o teclado. */
+    outline:3px solid var(--terciaria-color); /* Desenha um contorno de foco sem ocupar espaço no layout. */
+    outline-offset:3px; /* Afasta o contorno de foco da borda do elemento. */
+}
+
+footer { /* Rodapé da página. */
+    margin-top:52px; /* Define o espaço externo acima do elemento. */
+    padding:22px 0; /* Define o espaço interno; dois valores representam vertical e horizontal. */
+    border-top:1px solid var(--terciaria-color); /* Define a borda superior. */
+    display:flex; /* Escolhe o layout: flex alinha itens, grid cria uma grade, block cria um bloco e none oculta. */
+    justify-content:space-between; /* Distribui os itens no eixo principal; space-between deixa espaço entre eles. */
+    gap:20px; /* Define o espaço entre itens de um layout flex ou grid. */
+    font-size:11px; /* Define o tamanho da fonte; clamp limita um tamanho variável entre um mínimo e um máximo. */
+    color:var(--principal-color); /* Define a cor do texto; var() lê uma variável e inherit herda a cor do elemento pai. */
+    line-height:1.7; /* Define a altura das linhas de texto. */
+}
+
+footer a { /* Links dentro do rodapé. */
+    color:inherit; /* Define a cor do texto; var() lê uma variável e inherit herda a cor do elemento pai. */
+}
+
+.header_logo { /* Imagem do logotipo. */
+    width: 6rem; /* Define a largura; rem é relativo ao tamanho da fonte do elemento raiz. */
+}
+
+.marca { /* Nome da marca no cabeçalho. */
+    font-weight:750; /* Define o peso da fonte; valores maiores deixam o texto mais encorpado. */
+    font-size:19px; /* Define o tamanho da fonte; clamp limita um tamanho variável entre um mínimo e um máximo. */
+    color:inherit; /* Define a cor do texto; var() lê uma variável e inherit herda a cor do elemento pai. */
+    text-decoration:none; /* Controla a decoração do texto; none remove o sublinhado do link. */
+}
+
+.marca span { /* Elementos span dentro da marca, caso existam. */
+    font-size:30px; /* Define o tamanho da fonte; clamp limita um tamanho variável entre um mínimo e um máximo. */
+    vertical-align:middle; /* Ajusta o alinhamento vertical de elementos em linha. */
+    color:var(--terciaria-color); /* Define a cor do texto; var() lê uma variável e inherit herda a cor do elemento pai. */
+}
+
+.selo,.etiqueta { /* Estilos compartilhados pelo selo e pelas etiquetas. */
+    font-size:11px; /* Define o tamanho da fonte; clamp limita um tamanho variável entre um mínimo e um máximo. */
+    font-weight:750; /* Define o peso da fonte; valores maiores deixam o texto mais encorpado. */
+    letter-spacing:1.8px; /* Ajusta a distância entre as letras; valores negativos as aproximam. */
+}
+
+.selo { /* Selo de projeto escolar. */
+    border:1px solid var(--terciaria-color); /* Define espessura, estilo e cor da borda. */
+    border-radius:30px; /* Arredonda os cantos do elemento. */
+    padding:8px 12px; /* Define o espaço interno; dois valores representam vertical e horizontal. */
+}
+
+.intro { /* Seção de apresentação. */
+    padding:64px 0 24px; /* Define o espaço interno; dois valores representam vertical e horizontal. */
+}
+
+.etiqueta { /* Pequenos textos de identificação. */
+    color:var(--principal-color); /* Define a cor do texto; var() lê uma variável e inherit herda a cor do elemento pai. */
+}
+
+.intro>p:last-child { /* Último parágrafo que é filho direto da introdução. */
+    font-size:18px; /* Define o tamanho da fonte; clamp limita um tamanho variável entre um mínimo e um máximo. */
+    color:var(--principal-color); /* Define a cor do texto; var() lê uma variável e inherit herda a cor do elemento pai. */
+    line-height:1.6; /* Define a altura das linhas de texto. */
+}
+
+.pesquisa { /* Caixa que contém o formulário. */
+    background:var(--fundo-elementos); /* Define o fundo do elemento usando a cor indicada. */
+    border:1px solid var(--terciaria-color); /* Define espessura, estilo e cor da borda. */
+    border-radius:18px; /* Arredonda os cantos do elemento. */
+    padding:26px; /* Define o espaço interno; dois valores representam vertical e horizontal. */
+}
+
+.linha { /* Grupo do campo e do botão. */
+    display:flex; /* Escolhe o layout: flex alinha itens, grid cria uma grade, block cria um bloco e none oculta. */
+    gap:12px; /* Define o espaço entre itens de um layout flex ou grid. */
+}
+
+.dica { /* Textos auxiliares e horário da consulta. */
+    font-size:12px; /* Define o tamanho da fonte; clamp limita um tamanho variável entre um mínimo e um máximo. */
+    line-height:1.6; /* Define a altura das linhas de texto. */
+    color:var(--principal-color); /* Define a cor do texto; var() lê uma variável e inherit herda a cor do elemento pai. */
+    margin-bottom:0; /* Define o espaço externo abaixo do elemento. */
+}
+
+#status { /* Mensagem de carregamento, sucesso ou erro. */
+    font-size:14px; /* Define o tamanho da fonte; clamp limita um tamanho variável entre um mínimo e um máximo. */
+    line-height:1.6; /* Define a altura das linhas de texto. */
+    min-height:24px; /* Define a altura mínima para reservar espaço mesmo quando há pouco conteúdo. */
+    margin:20px 0; /* Define o espaço externo; auto centraliza horizontalmente um bloco com largura limitada. */
+}
+
+.erro { /* Estilo aplicado pelo JavaScript em caso de falha. */
+    border-left:4px solid var(--principal-color); /* Define a borda esquerda usada para destacar o erro. */
+    color:var(--principal-color); /* Define a cor do texto; var() lê uma variável e inherit herda a cor do elemento pai. */
+    background:var(--fundo-elementos); /* Define o fundo do elemento usando a cor indicada. */
+    padding:14px; /* Define o espaço interno; dois valores representam vertical e horizontal. */
+    border-radius:10px; /* Arredonda os cantos do elemento. */
+}
+
+.atual { /* Cartão com as condições atuais. */
+    background:var(--fundo-elementos); /* Define o fundo do elemento usando a cor indicada. */
+    border:1px solid var(--terciaria-color); /* Define espessura, estilo e cor da borda. */
+    border-radius:18px; /* Arredonda os cantos do elemento. */
+    padding:28px; /* Define o espaço interno; dois valores representam vertical e horizontal. */
+    display:grid; /* Escolhe o layout: flex alinha itens, grid cria uma grade, block cria um bloco e none oculta. */
+    grid-template-columns:1fr auto; /* Define as colunas da grade; 1fr ocupa espaço disponível e auto acompanha o conteúdo. */
+    gap:18px; /* Define o espaço entre itens de um layout flex ou grid. */
+}
+
+.temperatura { /* Número da temperatura em destaque. */
+    font-size:62px; /* Define o tamanho da fonte; clamp limita um tamanho variável entre um mínimo e um máximo. */
+    font-weight:600; /* Define o peso da fonte; valores maiores deixam o texto mais encorpado. */
+    letter-spacing:-3px; /* Ajusta a distância entre as letras; valores negativos as aproximam. */
+    align-self:center; /* Alinha somente este item dentro de sua área de layout. */
+}
+
+.unidade { /* Unidade °C ao lado da temperatura. */
+    font-size:26px; /* Define o tamanho da fonte; clamp limita um tamanho variável entre um mínimo e um máximo. */
+    letter-spacing:0; /* Ajusta a distância entre as letras; valores negativos as aproximam. */
+}
+
+.medidas { /* Grupo com umidade e vento. */
+    grid-column:1/-1; /* Define as colunas ocupadas; 1/-1 faz o item atravessar toda a grade. */
+    display:flex; /* Escolhe o layout: flex alinha itens, grid cria uma grade, block cria um bloco e none oculta. */
+    gap:32px; /* Define o espaço entre itens de um layout flex ou grid. */
+    border-top:1px solid var(--terciaria-color); /* Define a borda superior. */
+    font-size:14px; /* Define o tamanho da fonte; clamp limita um tamanho variável entre um mínimo e um máximo. */
+}
+
+.medidas strong { /* Valores em destaque dentro das medidas. */
+    margin-left:10px; /* Define o espaço externo à esquerda. */
+}
+
+[hidden] { /* Elementos com o atributo hidden, como resultados antes da consulta. */
+    display:none!important; /* Escolhe o layout: flex alinha itens, grid cria uma grade, block cria um bloco e none oculta. */
+}
+
+@media(max-width:600px) { /* Ajustes aplicados quando a largura da janela é de até 600 pixels. */
+    main { /* Área principal que reúne o conteúdo. */
+        padding:22px 20px; /* Define o espaço interno; dois valores representam vertical e horizontal. */
+    }
+    .selo { /* Selo de projeto escolar. */
+        display:none; /* Escolhe o layout: flex alinha itens, grid cria uma grade, block cria um bloco e none oculta. */
+    }
+    .intro { /* Seção de apresentação. */
+        padding-top:38px; /* Define o espaço interno acima do conteúdo. */
+    }
+    h1 { /* Título principal da página. */
+        letter-spacing:-2px; /* Ajusta a distância entre as letras; valores negativos as aproximam. */
+    }
+    .linha { /* Grupo do campo e do botão. */
+        flex-direction:column; /* Escolhe a direção do flex; column empilha os itens verticalmente. */
+    }
+    .pesquisa { /* Caixa que contém o formulário. */
+        padding:20px; /* Define o espaço interno; dois valores representam vertical e horizontal. */
+    }
+    .atual { /* Cartão com as condições atuais. */
+        grid-template-columns:1fr; /* Define as colunas da grade; 1fr ocupa espaço disponível e auto acompanha o conteúdo. */
+        padding:22px; /* Define o espaço interno; dois valores representam vertical e horizontal. */
+    }
+    .temperatura { /* Número da temperatura em destaque. */
+        font-size:58px; /* Define o tamanho da fonte; clamp limita um tamanho variável entre um mínimo e um máximo. */
+    }
+    .medidas { /* Grupo com umidade e vento. */
+        gap:15px; /* Define o espaço entre itens de um layout flex ou grid. */
+        flex-wrap:wrap; /* Permite que os itens do flex passem para outra linha quando faltar espaço. */
+    }
+    footer { /* Rodapé da página. */
+        flex-direction:column; /* Escolhe a direção do flex; column empilha os itens verticalmente. */
+        gap:8px; /* Define o espaço entre itens de um layout flex ou grid. */
+    }
+    .desktop { /* Trecho destinado a telas maiores. */
+        display:none; /* Escolhe o layout: flex alinha itens, grid cria uma grade, block cria um bloco e none oculta. */
+    }
+}
+
