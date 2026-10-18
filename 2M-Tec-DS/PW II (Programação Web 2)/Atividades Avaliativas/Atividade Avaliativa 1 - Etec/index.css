@@ -1,0 +1,347 @@
+/* ================================================
+   Configurações básicas/gerais
+   ================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis CSS (cores, fontes) */
+:root {
+    --preto: rgb(6, 6, 6);
+    --cinza: #5a5757;
+    --branco: rgba(252, 251, 251, 0.9);
+    --principal: #db3434;
+    --secundaria: rgba(255, 240, 240, 0.6);
+    --texto: "Open Sans", sans-serif;
+    --subtitulo: "Lato", sans-serif;
+    --titulo: "Poppins", sans-serif;
+}
+
+/* Estilos globais do body e textos */
+body {
+    background: var(--branco);
+}
+
+h1 {
+    font-family: var(--titulo);
+    font-weight: 700;
+    font-size: 80px;
+}
+
+h2, h3 {
+    font-family: var(--subtitulo);
+    font-weight: 800;
+    font-size: 30px;
+}
+
+p {
+    font-family: var(--texto);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* Cabeçalho fixo no topo */
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    align-items: center;
+    background-color: var(--branco);
+    backdrop-filter: blur(15px);
+    height: 100px;
+}
+
+/* Logo na navegação */
+.logo_nav {
+    height: 100px;
+    width: auto;
+}
+
+/* Lista de links da navegação */
+.lista_nav {
+    display: flex;
+    list-style: none;
+    width: 100%;
+}
+
+.lista_nav li {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.lista_nav i {
+    color: var(--principal);
+    font-size: 1.3rem;
+}
+
+.lista_nav a:not(.btn) {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--cinza);
+    transition: 0.5s ease;
+}
+
+.lista_nav a:hover:not(.btn) {
+    border-radius: 10%;
+    background-color: var(--secundaria);
+    color: var(--principal);
+    transform: scale(1.1);
+}
+
+.hero .btn {
+    margin-top: 20px;
+}
+
+/* Botão principal */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--principal);
+    border-radius: 5%;
+    color: var(--branco);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.btn:hover {
+    padding: 10px 20px;
+    border-radius: 5%;
+    color: var(--preto);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Seção hero (banner principal) */
+.hero {
+    text-align: center;
+    align-content: center;
+    color: var(--branco);
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(img/Etec.webp);
+    background-size: 100%;
+    height: 50vh;
+}
+
+/* Container genérico para conteúdo */
+.container {
+    display: flex;
+    align-items: center;
+    background-color: var(--secundaria);
+    backdrop-filter: blur(20px);
+    border: 1px var(--cinza) solid;
+    border-radius: 5px;
+    box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+}
+
+.container img {
+    border-radius: 10px;
+}
+
+/* Container para título e texto */
+.container_titulotexto {
+    flex-direction: column;
+    margin: 10px;
+}
+
+.container_titulotexto h2 {
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container_titulotexto p {
+    margin: 0 50px;
+}
+
+.links_uteis h2,
+.destaques h2 {
+    text-align: center;
+}
+
+/* Container de cards alinhados */
+.alinhamento_cards {
+    display: flex;
+}
+
+/* Cards genéricos */
+.card {
+    justify-content: space-around;
+    padding: 35px 15px;
+    margin: 2px;
+    width: 100%;
+    transition: 1s ease;
+}
+
+.card h3 {
+    color: var(--principal);
+}
+
+.card p {
+    font-size: 15px;
+}
+
+.card i {
+    font-size: 35px;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    border: 1px var(--principal) solid;
+}
+
+/* Cards de destaque com imagem de fundo */
+.card_feteps {
+    background-repeat: no-repeat;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+        url(img/Feteps.webp);
+    background-size: 100%;
+    color: var(--branco);
+}
+
+.card_email {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+        url(img/Email.webp);
+    color: var(--branco);
+}
+
+.card_havard {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+        url(img/Havard.webp);
+    color: var(--branco);
+}
+
+.card_usp {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+        url(img/Aprovada_usp.webp);
+    color: var(--branco);
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--preto);
+    color: var(--branco);
+    font-size: 20px;
+}
+
+.footer_col {
+    align-content: center;
+    flex-direction: column;
+}
+
+.footer img {
+    width: 200px;
+}
+
+.footer li {
+    list-style: none;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--principal);
+}
+
+.footer i {
+    color: var(--branco);
+}
+
+.footer input {
+    width: 200px;
+    height: 5vh;
+}
+
+.footer button {
+    background-color: var(--principal);
+    margin-left: 4px;
+    width: 100px;
+    height: 5vh;
+    transition: 1s ease;
+}
+
+.footer button:hover {
+    transform: scale(1.11);
+}
+
+.footer_direitos {
+    background-color: #1b1a1a;
+    text-align: center;
+    width: 100%;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+    .alinhamento_cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+    .alinhamento_cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .lista_nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lista_nav li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .hero {
+        height: 40vh;
+    }
+}
